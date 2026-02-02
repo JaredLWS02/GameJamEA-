@@ -3,16 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\GameJamEA-\\GameJam26\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\gamejamea-\\gamejam26\\assets\\srcipt\\wall trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|solutionrelative:assets\\srcipt\\wall trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\gamejamea-\\gamejam26\\assets\\srcipt\\vacuum patrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|solutionrelative:assets\\srcipt\\vacuum patrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\GitHub\\GameJamEA-\\GameJam26\\assets\\srcipt\\player movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\gamejamea-\\gamejam26\\assets\\srcipt\\player movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|solutionrelative:assets\\srcipt\\player movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\GitHub\\LegendaryWizard\\Assets\\Script\\PlayerMomentController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +17,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Wall trigger.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\GameJamEA-\\GameJam26\\Assets\\Srcipt\\Wall trigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Srcipt\\Wall trigger.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\GameJamEA-\\GameJam26\\Assets\\Srcipt\\Wall trigger.cs",
-              "RelativeToolTip": "Assets\\Srcipt\\Wall trigger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T08:52:39.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Vacuum Patrol.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\GameJamEA-\\GameJam26\\Assets\\Srcipt\\Vacuum Patrol.cs",
-              "RelativeDocumentMoniker": "Assets\\Srcipt\\Vacuum Patrol.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\GameJamEA-\\GameJam26\\Assets\\Srcipt\\Vacuum Patrol.cs",
-              "RelativeToolTip": "Assets\\Srcipt\\Vacuum Patrol.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAuAAAAAAAAAA==",
+              "Title": "PlayerMomentController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\LegendaryWizard\\Assets\\Script\\PlayerMomentController.cs",
+              "RelativeDocumentMoniker": "..\\..\\LegendaryWizard\\Assets\\Script\\PlayerMomentController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\LegendaryWizard\\Assets\\Script\\PlayerMomentController.cs",
+              "RelativeToolTip": "..\\..\\LegendaryWizard\\Assets\\Script\\PlayerMomentController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T06:22:58.716Z",
+              "WhenOpened": "2026-01-31T08:59:56.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Player Movement.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\GameJamEA-\\GameJam26\\Assets\\Srcipt\\Player Movement.cs",
               "RelativeDocumentMoniker": "Assets\\Srcipt\\Player Movement.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\GameJamEA-\\GameJam26\\Assets\\Srcipt\\Player Movement.cs",
               "RelativeToolTip": "Assets\\Srcipt\\Player Movement.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wAoAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T08:36:20.386Z"
+              "WhenOpened": "2026-01-31T08:36:20.386Z",
+              "EditorCaption": ""
             }
           ]
         }
