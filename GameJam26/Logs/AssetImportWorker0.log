@@ -240,3 +240,139 @@ Received Import Request.
 Start importing Assets/Jared/Cat.unity using Guid(da5b6671ae011c54ebc24ae6567fa181) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2cb1379d49f95ed127da56c46163c048') in 0.0677893 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Import Request.
+  Time since last request: 4243.501661 seconds.
+  path: Assets/Jared/animation
+  artifactKey: Guid(3a0a7baf7368bce4aaa30542bb680f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jared/animation using Guid(3a0a7baf7368bce4aaa30542bb680f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a08d6432d78cb1347ff2ffaf391dcb91') in 0.0069285 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.925345 seconds.
+  path: Assets/Jared/animation
+  artifactKey: Guid(3a0a7baf7368bce4aaa30542bb680f59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/animation using Guid(3a0a7baf7368bce4aaa30542bb680f59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e920eda9117e9de65b9f734295830636') in 0.0374628 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1442.333991 seconds.
+  path: Assets/Jared/animation/spinning cat.png
+  artifactKey: Guid(a382d900d1b2704479de439df7bc479b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jared/animation/spinning cat.png using Guid(a382d900d1b2704479de439df7bc479b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '72f00584e891ce19a263102127b6d3bf') in 0.1755202 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.699619 seconds.
+  path: Assets/Jared/animation/spinning cat.png
+  artifactKey: Guid(a382d900d1b2704479de439df7bc479b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/animation/spinning cat.png using Guid(a382d900d1b2704479de439df7bc479b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '444aae7610d77ecd1f0bd22cbee0a411') in 0.1052863 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 8573.437197 seconds.
+  path: Assets/spinning-cat.gif
+  artifactKey: Guid(4444504be2ba7074c8ccb64c584f5207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/spinning-cat.gif using Guid(4444504be2ba7074c8ccb64c584f5207) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8547754a354c844322c9dcc0b86005b1') in 0.1555571 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.778163 seconds.
+  path: Assets/spinning-cat.gif
+  artifactKey: Guid(4444504be2ba7074c8ccb64c584f5207) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/spinning-cat.gif using Guid(4444504be2ba7074c8ccb64c584f5207) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '15b6868e59402458a10ce9d15042f975') in 0.0660922 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 421.668088 seconds.
+  path: Assets/Jared/animation/spinning cat.png
+  artifactKey: Guid(a382d900d1b2704479de439df7bc479b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jared/animation/spinning cat.png using Guid(a382d900d1b2704479de439df7bc479b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f132cf2c4efb2270fa6ec9850887940') in 0.0416952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.917004 seconds.
+  path: Assets/Jared/animation/spinning cat.png
+  artifactKey: Guid(a382d900d1b2704479de439df7bc479b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/animation/spinning cat.png using Guid(a382d900d1b2704479de439df7bc479b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7983c00c2829197c57ae2b94497effed') in 0.0223108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 219.472907 seconds.
+  path: Assets/Jared/animation/spinning cat.png
+  artifactKey: Guid(a382d900d1b2704479de439df7bc479b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jared/animation/spinning cat.png using Guid(a382d900d1b2704479de439df7bc479b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '02b0a5d31e1ac928696ca0d1cc8ddadc') in 0.0477088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.915726 seconds.
+  path: Assets/Jared/animation/spinning cat.png
+  artifactKey: Guid(a382d900d1b2704479de439df7bc479b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/animation/spinning cat.png using Guid(a382d900d1b2704479de439df7bc479b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e3bf041b9ec684c053c7781491659704') in 0.0335072 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 164.207673 seconds.
+  path: Assets/Jared/animation/spinning cat.png
+  artifactKey: Guid(a382d900d1b2704479de439df7bc479b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jared/animation/spinning cat.png using Guid(a382d900d1b2704479de439df7bc479b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c4f371214e17c6930f82f4e851ea82c') in 0.3202168 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 45
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.537009 seconds.
+  path: Assets/Jared/animation/spinning cat.png
+  artifactKey: Guid(a382d900d1b2704479de439df7bc479b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/animation/spinning cat.png using Guid(a382d900d1b2704479de439df7bc479b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab54ac65506d2b1b7983476ac89dad99') in 0.1730358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 45
+
+========================================================================
+Received Import Request.
+  Time since last request: 92.749579 seconds.
+  path: Assets/Jared/animation/cat.controller
+  artifactKey: Guid(13c2a741daef17b45bd9d329e4ffa215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jared/animation/cat.controller using Guid(13c2a741daef17b45bd9d329e4ffa215) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf16db56b23ed4ddf1c8afca40e3615a') in 0.0056482 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.944664 seconds.
+  path: Assets/Jared/animation/cat.controller
+  artifactKey: Guid(13c2a741daef17b45bd9d329e4ffa215) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/animation/cat.controller using Guid(13c2a741daef17b45bd9d329e4ffa215) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fae54810b0265a613a7c0f4d2999b42b') in 0.0192362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.986090 seconds.
+  path: Assets/Jared/animation/CatSpin.anim
+  artifactKey: Guid(e250cae403939254bacb1c9c9e989f50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/animation/CatSpin.anim using Guid(e250cae403939254bacb1c9c9e989f50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eab162fef606df9be69f0352a808bdbd') in 0.0327557 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1017.747427 seconds.
+  path: Assets/Jared/animation/cat.controller
+  artifactKey: Guid(13c2a741daef17b45bd9d329e4ffa215) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/animation/cat.controller using Guid(13c2a741daef17b45bd9d329e4ffa215) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '19e140b7b8bb744368968b10dfd1d61e') in 0.0233017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Jared/Cat.unity
+  artifactKey: Guid(da5b6671ae011c54ebc24ae6567fa181) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/Cat.unity using Guid(da5b6671ae011c54ebc24ae6567fa181) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bb6455343bf090cb8012084efbeec3b7') in 0.0202198 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+

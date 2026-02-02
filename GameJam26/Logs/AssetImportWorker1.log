@@ -216,3 +216,11 @@ Unloading 3960 unused Assets / (1.5 MB). Loaded Objects now: 4555.
 Memory consumption went from 94.2 MB to 92.7 MB.
 Total: 11.908100 ms (FindLiveObjects: 0.551000 ms CreateObjectMapping: 0.875400 ms MarkObjects: 8.293700 ms  DeleteObjects: 2.185700 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 18175.214837 seconds.
+  path: Assets/Jared/animation/CatSpin.anim
+  artifactKey: Guid(e250cae403939254bacb1c9c9e989f50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/animation/CatSpin.anim using Guid(e250cae403939254bacb1c9c9e989f50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bb9491a26a8c70a3032dc55a0dde23bc') in 0.5421364 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
