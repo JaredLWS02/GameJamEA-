@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/respin/6000.3.6f1-732c1ec89f18' branch; Version is '6000.3.6f1 (bbb010bdb8a3) revision 12300304'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 16223 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-User" at "2026-02-03T14:01:45.7787959Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-User" at "2026-02-03T14:25:09.3060373Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-02-03T14:01:45Z
+Date: 2026-02-03T14:25:09Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.6f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/User/Documents/GitHub/GameJamEA-/GameJam26
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65291
+52451
 -licensingIpc
 LicenseClient-User
 -job-worker-count
@@ -67,12 +67,12 @@ C:/Users/User/Documents/GitHub/GameJamEA-/GameJam26
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [25856]  Target information:
+Player connection [6072]  Target information:
 
-Player connection [25856]  * "[IP] 192.168.0.246 [Port] 0 [Flags] 2 [Guid] 3525052344 [EditorId] 3525052344 [Version] 1048832 [Id] WindowsEditor(7,JuliusRTX4060) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [6072]  * "[IP] 192.168.0.246 [Port] 0 [Flags] 2 [Guid] 2788934230 [EditorId] 2788934230 [Version] 1048832 [Id] WindowsEditor(7,JuliusRTX4060) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [25856] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [25856] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6072] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [6072] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,7 +84,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.61 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.23 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.6f1 (bbb010bdb8a3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -96,48 +96,51 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     7956 MB
     Driver:   32.0.15.9144
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field Overlay': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field SSD': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56400
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56844
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001244 seconds.
-- Loaded All Assemblies, in  0.438 seconds
+Registered in 0.001386 seconds.
+- Loaded All Assemblies, in  0.443 seconds
 Native extension for WindowsStandalone target not found
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.476 seconds
-Domain Reload Profiling: 913ms
-	BeginReloadAssembly (145ms)
+- Finished resetting the current domain, in  0.427 seconds
+Domain Reload Profiling: 869ms
+	BeginReloadAssembly (139ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (176ms)
-		LoadAssemblies (143ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (200ms)
+		LoadAssemblies (136ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (173ms)
-			TypeCache.Refresh (171ms)
-				TypeCache.ScanAssembly (155ms)
+		AnalyzeDomain (197ms)
+			TypeCache.Refresh (195ms)
+				TypeCache.ScanAssembly (182ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (477ms)
+	FinalizeReload (427ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (436ms)
+		SetupLoadedEditorAssemblies (384ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (55ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (108ms)
-			ProcessInitializeOnLoadAttributes (190ms)
-			ProcessInitializeOnLoadMethodAttributes (78ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (167ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -149,13 +152,13 @@ Begin MonoManager ReloadAssembly
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              580b5d858c86421db508977982f6eef5
-  Correlation Id:          3690f5e9ab744eae6b7a3fc97141f20a
-  External correlation Id: 8669741206020911383
+  Session Id:              0ea9d27102414f73a5c8da87341f53c6
+  Correlation Id:          e846e041795135921c9172bc78b5df0a
+  External correlation Id: 4644192026097965701
   Machine Id:              6M8LZl29BEVRrCZw4DBSDLu65zs=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-User" (connect: 0.00s, validation: 0.01s, handshake: 1.97s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-User-notifications" at "2026-02-03T14:01:47.7578145Z"
-[Licensing::Module] Licensing Background thread has ended after 1.98s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-User" (connect: 0.00s, validation: 0.00s, handshake: 1.91s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-User-notifications" at "2026-02-03T14:25:11.219199Z"
+[Licensing::Module] Licensing Background thread has ended after 1.91s
 [Licensing::Module] Licensing is initialized (took 0.32s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
@@ -163,69 +166,1484 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  0.966 seconds
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.007 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.725 seconds
-Domain Reload Profiling: 1688ms
-	BeginReloadAssembly (489ms)
+- Finished resetting the current domain, in  1.134 seconds
+Domain Reload Profiling: 2138ms
+	BeginReloadAssembly (504ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (27ms)
-	RebuildCommonClasses (33ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (36ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (396ms)
-		LoadAssemblies (300ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (416ms)
+		LoadAssemblies (314ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (191ms)
-			TypeCache.Refresh (146ms)
-				TypeCache.ScanAssembly (133ms)
-			BuildScriptInfoCaches (37ms)
+		AnalyzeDomain (200ms)
+			TypeCache.Refresh (152ms)
+				TypeCache.ScanAssembly (140ms)
+			BuildScriptInfoCaches (40ms)
 			ResolveRequiredComponents (5ms)
-	FinalizeReload (725ms)
+	FinalizeReload (1135ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (618ms)
+		SetupLoadedEditorAssemblies (1007ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (120ms)
-			ProcessInitializeOnLoadAttributes (451ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			BeforeProcessingInitializeOnLoad (214ms)
+			ProcessInitializeOnLoadAttributes (707ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3952 unused Assets / (1.3 MB). Loaded Objects now: 4536.
-Memory consumption went from 94.1 MB to 92.8 MB.
-Total: 6.308200 ms (FindLiveObjects: 0.338200 ms CreateObjectMapping: 0.223800 ms MarkObjects: 4.844500 ms  DeleteObjects: 0.900100 ms)
+Unloading 4084 unused Assets / (2.7 MB). Loaded Objects now: 4686.
+Memory consumption went from 95.9 MB to 93.2 MB.
+Total: 10.964800 ms (FindLiveObjects: 0.611500 ms CreateObjectMapping: 0.368500 ms MarkObjects: 7.185500 ms  DeleteObjects: 2.797800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 29531.145939 seconds.
-  path: Assets/Julius/PrefabJ/VacuumMachine.prefab
-  artifactKey: Guid(62c83178770118345a0fdb16bdffc3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Julius/PrefabJ/VacuumMachine.prefab using Guid(62c83178770118345a0fdb16bdffc3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f1978c9a692078db923d49c8170f971a') in 0.0775068 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+  Time since last request: 30935.170761 seconds.
+  path: Assets/Julius/PrefabJ/Player.prefab
+  artifactKey: Guid(21e45f83f99045e44a619f5b599f3119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julius/PrefabJ/Player.prefab using Guid(21e45f83f99045e44a619f5b599f3119) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb630a0d38767b9da40c6b8ce754029c') in 0.1423793 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 143.673934 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph
+  artifactKey: Guid(ca2ed216f98028c4dae6c5224a952b3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph using Guid(ca2ed216f98028c4dae6c5224a952b3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '89e7881d243c7507ac67eafa932b51b9') in 0.0586315 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a1568297e175033f50e5f26548baf37f') in 0.0135583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_21.asset
+  artifactKey: Guid(f9c7ab8d3aab8cb448dd7810f6cabdb4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_21.asset using Guid(f9c7ab8d3aab8cb448dd7810f6cabdb4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1e716edb9b75c5d66e6ad80043dfc63c') in 0.0610727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scripts/Misc
+  artifactKey: Guid(3e26ba8963b7de747917fa378b9c473e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scripts/Misc using Guid(3e26ba8963b7de747917fa378b9c473e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '878da691872e9ae3e592b1633889ad0f') in 0.0140931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_10.asset
+  artifactKey: Guid(8957af186e093f647bb7ff79bfc23fdb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_10.asset using Guid(8957af186e093f647bb7ff79bfc23fdb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b9e084edf92541ef22a5a10c2e5801df') in 0.0168305 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Animations/Panels
+  artifactKey: Guid(7dc8493319a18b14cb0de7852c6ae92c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Animations/Panels using Guid(7dc8493319a18b14cb0de7852c6ae92c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e4eaa8e592415b96213305b8d45e761e') in 0.0137709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/CK/karsiori/Scenes/SampleScene - Woods Tileset and Background.unity
+  artifactKey: Guid(fd663434dc5394f46af3dcb6a9755f7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/Scenes/SampleScene - Woods Tileset and Background.unity using Guid(fd663434dc5394f46af3dcb6a9755f7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e0eb0e62d59d819df850c428182cb907') in 0.0209856 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_41.asset
+  artifactKey: Guid(8775055d9fe32894fb2d26875a9620eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_41.asset using Guid(8775055d9fe32894fb2d26875a9620eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '31d504d3ea20531f60cb22b4a3e81148') in 0.017302 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/CK/karsiori/TileMap/Backgrounds/WOODS - Fourth.png
+  artifactKey: Guid(0e8e998796118084d8b33b5085a3560b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Backgrounds/WOODS - Fourth.png using Guid(0e8e998796118084d8b33b5085a3560b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fde7ff849c167e3c58c9513dde5ed330') in 0.0473139 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Jared/animation
+  artifactKey: Guid(3a0a7baf7368bce4aaa30542bb680f59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/animation using Guid(3a0a7baf7368bce4aaa30542bb680f59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a5c8ca9858847ec21ed953bde6efe757') in 0.0137024 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Fonts/RUBIK-LIGHT SDF.asset
+  artifactKey: Guid(0b65c99348f068b49bef5db0bb76a6e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Fonts/RUBIK-LIGHT SDF.asset using Guid(0b65c99348f068b49bef5db0bb76a6e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dfdc8fd852d5b8e0d888077bf0e503ce') in 0.0620066 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CK/Audio
+  artifactKey: Guid(72da340fafa15a94c9e06dad8096a152) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Audio using Guid(72da340fafa15a94c9e06dad8096a152) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f2a44f381f8df002f6495c4d88764fc5') in 0.0128483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Animations/Panels/WindowPopUpBig.anim
+  artifactKey: Guid(e152dd3c2d246a94d86ef49dcdde0f1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Animations/Panels/WindowPopUpBig.anim using Guid(e152dd3c2d246a94d86ef49dcdde0f1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '36a0279772126c705c856ceb70f3deb1') in 0.0302254 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Animations/Elements/FlashingText.anim
+  artifactKey: Guid(28d4c8bfa5756be43a81c846319bf2a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Animations/Elements/FlashingText.anim using Guid(28d4c8bfa5756be43a81c846319bf2a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '02d35b8ed789d9b616f200158071d3f7') in 0.0147204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Fonts
+  artifactKey: Guid(2e0b0b7983409494bb8a59037fbfc5a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Fonts using Guid(2e0b0b7983409494bb8a59037fbfc5a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bcbcb3260b415f64beac3ee47ea635ef') in 0.0123714 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/s.unity
+  artifactKey: Guid(b050e086a6693cc4d87fb142763961d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/s.unity using Guid(b050e086a6693cc4d87fb142763961d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a10c85f87a4adeb98a0d2cb46e23bd8a') in 0.0142485 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/SlimUI
+  artifactKey: Guid(4155c9b97083df240b524636482bc3aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI using Guid(4155c9b97083df240b524636482bc3aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3991d4ac1f26b5cbcb0648e169424c33') in 0.0136027 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_82.asset
+  artifactKey: Guid(835b8a97f0f3e39488efffa1c3baeb14) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_82.asset using Guid(835b8a97f0f3e39488efffa1c3baeb14) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd81f2c8a4f2a512030577a9a22327c40') in 0.014717 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_86.asset
+  artifactKey: Guid(86aa9696dab2d674e95b2cb55e369b40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_86.asset using Guid(86aa9696dab2d674e95b2cb55e369b40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '61a3bb908cbaa38dfdb7ff99479438fc') in 0.015574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scripts/Managers/UISettingsManager.cs
+  artifactKey: Guid(d8f6aa6586f77764fab668a0a62d8f7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scripts/Managers/UISettingsManager.cs using Guid(d8f6aa6586f77764fab668a0a62d8f7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ff7160dd12fda460517862ad00bc573') in 0.0140753 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/CK/Cainos/Pixel Art Platformer - Village Props/Material/FX/MT FX Flame Glow.mat
+  artifactKey: Guid(6c48dc6ed4cda324b83bb2391ca6fb9a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Cainos/Pixel Art Platformer - Village Props/Material/FX/MT FX Flame Glow.mat using Guid(6c48dc6ed4cda324b83bb2391ca6fb9a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7215a123b06a0bda3637598049dd21a8') in 0.0169191 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph
+  artifactKey: Guid(124c112a6e8f1a54e8b0870e881b56d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph using Guid(124c112a6e8f1a54e8b0870e881b56d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e94945af01ca0b10385dd7ff9b8902fb') in 0.0133077 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_8.asset
+  artifactKey: Guid(094dd37345348064a8558780b21d4f98) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_8.asset using Guid(094dd37345348064a8558780b21d4f98) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6594a80dba5da514f748f1f33da2e8ab') in 0.0168159 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_61.asset
+  artifactKey: Guid(4bd2271b3d6a67444937f0c92bd67018) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_61.asset using Guid(4bd2271b3d6a67444937f0c92bd67018) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '08ea244368a0ef3e918eed9a7df07cad') in 0.0147754 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Jared/animation/spinning cat.png
+  artifactKey: Guid(a382d900d1b2704479de439df7bc479b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/animation/spinning cat.png using Guid(a382d900d1b2704479de439df7bc479b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '814716827dc59f43a11818c62b56dc5d') in 0.0683051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 45
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Buttons
+  artifactKey: Guid(a195f4f1f85828d4b9de67acb5243cec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Buttons using Guid(a195f4f1f85828d4b9de67acb5243cec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9f744bab426bb5d4971e5d8a23140860') in 0.0129475 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/script/Mainmenu.cs
+  artifactKey: Guid(5b6086c3f4276f84091060643054a8cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/script/Mainmenu.cs using Guid(5b6086c3f4276f84091060643054a8cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ba3ce318fa3399a1d14e2c5a509541e1') in 0.0142886 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_47.asset
+  artifactKey: Guid(0ea48912424104240be41a1239c51dcb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_47.asset using Guid(0ea48912424104240be41a1239c51dcb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1fd167f6140f40b86e022e0e2fbfdfd1') in 0.0169761 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_67.asset
+  artifactKey: Guid(4c5fe05048939be41b6d4df2062808b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_67.asset using Guid(4c5fe05048939be41b6d4df2062808b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '74768170f0fc89c2eef47495aea24877') in 0.0158281 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_24.asset
+  artifactKey: Guid(c6a266e3ea92b6d4696006347a1c16ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_24.asset using Guid(c6a266e3ea92b6d4696006347a1c16ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f9e32df39e8d9709aec89e516052d7d3') in 0.0154283 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics
+  artifactKey: Guid(5d609832c6740fb45bad813c275ab225) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics using Guid(5d609832c6740fb45bad813c275ab225) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ed2d87328ff57385bc83c81e8c3df9a3') in 0.0138235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scenes
+  artifactKey: Guid(e82ea4333206b0246a696bd002a97d27) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scenes using Guid(e82ea4333206b0246a696bd002a97d27) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7ee38dfceff6ba35a113edbd32521693') in 0.0135749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_81.asset
+  artifactKey: Guid(2adf5a8631b4c4d40a272ad9d2a4cb00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_81.asset using Guid(2adf5a8631b4c4d40a272ad9d2a4cb00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5af1638b381a1c9b362856d4fd2741c6') in 0.0178507 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_78.asset
+  artifactKey: Guid(d2c81206cf6c6604980b14a9d0e763cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_78.asset using Guid(d2c81206cf6c6604980b14a9d0e763cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0edfa8dd75a3cc297bd7ba55f90962c2') in 0.0159677 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_87.asset
+  artifactKey: Guid(31ce9cdfaa5d91b40bf4d34d4969f6fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_87.asset using Guid(31ce9cdfaa5d91b40bf4d34d4969f6fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '19da68cd4a96bc9d1a635a0ab34a3662') in 0.0154918 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl
+  artifactKey: Guid(96de908384869cd409c75efa351d5edf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl using Guid(96de908384869cd409c75efa351d5edf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '618a9890706c157bfb969a232a26d388') in 0.0140774 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_29.asset
+  artifactKey: Guid(53acc36a9e4920b41975dd31e092b62a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_29.asset using Guid(53acc36a9e4920b41975dd31e092b62a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '37f747529e85f03a6608d4e179c63ef9') in 0.0146217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_60.asset
+  artifactKey: Guid(71635bfc1cb53bd4c93add28d162422f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_60.asset using Guid(71635bfc1cb53bd4c93add28d162422f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '00a59a2d6a8ede0e8363b8c07f49b4f5') in 0.014583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/CK/karsiori/TileMap/Backgrounds/BACKGROUND.png
+  artifactKey: Guid(f44fd67bd73d546469d7c317fcd1d5ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Backgrounds/BACKGROUND.png using Guid(f44fd67bd73d546469d7c317fcd1d5ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6d408b17ea92820108e6083ba662e8db') in 0.0189947 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/CK/Scene/Level4.unity
+  artifactKey: Guid(c7de38ff44f41f543a1599bdc708e24b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Scene/Level4.unity using Guid(c7de38ff44f41f543a1599bdc708e24b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dbba2a1a553bd0046cfcc46300bf357e') in 0.0170529 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_40.asset
+  artifactKey: Guid(bf913de136965a04493eddbf5c96054c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_40.asset using Guid(bf913de136965a04493eddbf5c96054c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5c049cd266a0a54868202925c9e0baf8') in 0.0158195 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_11.asset
+  artifactKey: Guid(307b4843ef75d8e4b9f780ac1450fc82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_11.asset using Guid(307b4843ef75d8e4b9f780ac1450fc82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bd5ce8f380280a445e83acd3ec99091e') in 0.0136923 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_70.asset
+  artifactKey: Guid(0a09e1992de8ed64f916979302ca1b3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_70.asset using Guid(0a09e1992de8ed64f916979302ca1b3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2b740664621e8d1eb5ea8d967248e013') in 0.015802 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/CK/Cainos/Pixel Art Platformer - Village Props/Texture
+  artifactKey: Guid(4fb7661537e28884697bca33184bdaa0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Cainos/Pixel Art Platformer - Village Props/Texture using Guid(4fb7661537e28884697bca33184bdaa0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f8bd6c8b549b652fce0f54a7d9067c4b') in 0.0127019 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Julius/ScenesJ/Level Selection.unity
+  artifactKey: Guid(2d5b5928518682c48b117be4dc65d8e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Julius/ScenesJ/Level Selection.unity using Guid(2d5b5928518682c48b117be4dc65d8e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e96283e53c9c6dac83a13d552e36273a') in 0.0162707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Cursors/Cursor 1 64px.png
+  artifactKey: Guid(7825633d016559249ade03ab1979c7b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Cursors/Cursor 1 64px.png using Guid(7825633d016559249ade03ab1979c7b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '14ddc85111169a0bb8e283c4497a23f5') in 0.0161686 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_14.asset
+  artifactKey: Guid(2f1cd3866e345c24e907ed9b3e88cd2d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_14.asset using Guid(2f1cd3866e345c24e907ed9b3e88cd2d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6d165a40ceb5d60995b6ce0658675f90') in 0.0159701 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SlimUI/Modern Menu 1/ModernMenu_V1.3.1_Documentation.pdf
+  artifactKey: Guid(1bed8e176c53b41409ae028402b062fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/ModernMenu_V1.3.1_Documentation.pdf using Guid(1bed8e176c53b41409ae028402b062fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22e3a0013d7f0c374527c45a8d1ceaae') in 0.0137466 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Cursors/Cursor 3 64px.png
+  artifactKey: Guid(9b651564b335a444b9a5cc03b5e89e2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Cursors/Cursor 3 64px.png using Guid(9b651564b335a444b9a5cc03b5e89e2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '24272a55f61899aedf1d664ed0eb7774') in 0.0161142 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/CK/Scene
+  artifactKey: Guid(9e39b4767da3f7548bfdfe96d028810e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Scene using Guid(9e39b4767da3f7548bfdfe96d028810e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd6ee8be60d2869b0042d8f56d45fc720') in 0.0142186 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ddffe416b03b08e12f43098430f83f2e') in 0.0226466 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CK/Script/SwordTrollSound.cs
+  artifactKey: Guid(0bb9d6247b47b2243b683dd2d409a2c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Script/SwordTrollSound.cs using Guid(0bb9d6247b47b2243b683dd2d409a2c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e6a59b738eb9f1cd6b6c19bf857d7bd5') in 0.0141542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/TextMesh Pro/Shaders
+  artifactKey: Guid(e9f693669af91aa45ad615fc681ed29f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders using Guid(e9f693669af91aa45ad615fc681ed29f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2627c372ba715d167149b5fdef2a5fdf') in 0.0142472 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Misc/Detail 1 256px.png
+  artifactKey: Guid(05f659001c09bec428a6bf8899b37df6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Misc/Detail 1 256px.png using Guid(05f659001c09bec428a6bf8899b37df6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '712145a260b8e15f81a0da8e403878db') in 0.0198097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Assets/Julius/PrefabJ/Wall(Left).prefab
-  artifactKey: Guid(ce9c889edf10c4440ad8211ff334f4ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Julius/PrefabJ/Wall(Left).prefab using Guid(ce9c889edf10c4440ad8211ff334f4ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '84d6f5c667e9e386136f4a3a05d8257d') in 0.1180758 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_45.asset
+  artifactKey: Guid(35b298bf341462e4095e32ad67cc37a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_45.asset using Guid(35b298bf341462e4095e32ad67cc37a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4fc10419671fe6945de883b932a719f2') in 0.0150614 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_37.asset
+  artifactKey: Guid(75abc7e4d64066d43817c8e608472486) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_37.asset using Guid(75abc7e4d64066d43817c8e608472486) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '545eea4a5ab89f7a790b89a3902e0aa1') in 0.0160077 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CK
+  artifactKey: Guid(9843b66c982577c4e87b60ba06d3e779) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK using Guid(9843b66c982577c4e87b60ba06d3e779) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3717d86712d01c71c35240f48e2605a8') in 0.0141858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Julius/PrefabJ/Player.prefab
+  artifactKey: Guid(21e45f83f99045e44a619f5b599f3119) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Julius/PrefabJ/Player.prefab using Guid(21e45f83f99045e44a619f5b599f3119) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '678362a222ef00d48e97281fc6112b2d') in 0.0419728 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_19.asset
+  artifactKey: Guid(f32d9e1260cb1dd4caa160ac17b4cafc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_19.asset using Guid(f32d9e1260cb1dd4caa160ac17b4cafc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '02e2ccf0667da231880737555b1f40f7') in 0.0167888 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc
+  artifactKey: Guid(c334973cef89a9840b0b0c507e0377ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc using Guid(c334973cef89a9840b0b0c507e0377ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd7885d878d29f63bbb2d9ce5658aa765') in 0.0156214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Buttons/Button Frame Hover 256px.png
+  artifactKey: Guid(a4fde6e0b21dc224d813ee493157874f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Buttons/Button Frame Hover 256px.png using Guid(a4fde6e0b21dc224d813ee493157874f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ea496ed7822cf62143c971caf96994ef') in 0.0198956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_31.asset
+  artifactKey: Guid(1837ddfc38e26874c8fbf33413a4fe28) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_31.asset using Guid(1837ddfc38e26874c8fbf33413a4fe28) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '85975f18079bcf4d10e4a9358d8992ee') in 0.0174108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/CK/Audio/heyyeyaaeyaaaeyaeyaaa.mp3
+  artifactKey: Guid(720f2ca916bf1bf4291eedb143d8111d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Audio/heyyeyaaeyaaaeyaeyaaa.mp3 using Guid(720f2ca916bf1bf4291eedb143d8111d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '12b26276d26c080d26a526d1671444e1') in 0.0381523 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_23.asset
+  artifactKey: Guid(a02a258e348d44447be48e199d885db9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_23.asset using Guid(a02a258e348d44447be48e199d885db9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f3cda3226ec8ea99fe38b296602ee10b') in 0.0154382 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scenes/Demos/Demo2Mobile.unity
+  artifactKey: Guid(b84379738a0ecc2449178df5547a202c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scenes/Demos/Demo2Mobile.unity using Guid(b84379738a0ecc2449178df5547a202c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5e1ef506312972eb414ffd248b897a8b') in 0.0141167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Cursors/Cursor 5 64px.png
+  artifactKey: Guid(a418eb152ae3ca64d904e40a67b51f18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Cursors/Cursor 5 64px.png using Guid(a418eb152ae3ca64d904e40a67b51f18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ec89d4d1e56b82fe235ee8b32863eb80') in 0.0190737 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/CK/karsiori/TileMap/Decorations
+  artifactKey: Guid(8c8aacf5e651f5c4f925b03ec1f407d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Decorations using Guid(8c8aacf5e651f5c4f925b03ec1f407d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b3859f11cbb6d5a62e81d68c16b8406e') in 0.014136 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scenes/Demos/Demo1/LightingData.asset
+  artifactKey: Guid(765562c5096d82149bd10a505de3957e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scenes/Demos/Demo1/LightingData.asset using Guid(765562c5096d82149bd10a505de3957e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1bd2e5ef853a36b6667a10003da8a162') in 0.0175424 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Buttons/Button Highlighted 256px.png
+  artifactKey: Guid(9e2ea1cb70ae8cf41a3db001d7b7cebb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Buttons/Button Highlighted 256px.png using Guid(9e2ea1cb70ae8cf41a3db001d7b7cebb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9e9109c97e7e8a46367144f3fe784443') in 0.0196147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Sprite.shader
+  artifactKey: Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Sprite.shader using Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fcb95d3881fd9eb74250cf100c6ee87d') in 0.0180652 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/CK/karsiori/TileMap/Decorations/GRASS 2-1.png
+  artifactKey: Guid(978dc763e47067149be399903ad6addb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Decorations/GRASS 2-1.png using Guid(978dc763e47067149be399903ad6addb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '459d817fd5b3154741a3f1a46a27d193') in 0.0190109 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/CK/Cainos/Pixel Art Platformer - Village Props/Material/FX/MT FX Flame.mat
+  artifactKey: Guid(dce4faabfa7d00147bb7d853e5c1fbf3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Cainos/Pixel Art Platformer - Village Props/Material/FX/MT FX Flame.mat using Guid(dce4faabfa7d00147bb7d853e5c1fbf3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8cfabbe9e7b1e533b0550f80d34e6c31') in 0.016031 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/CK/karsiori/TileMap/Decorations/GRASS 2-2.png
+  artifactKey: Guid(1ee73367054f56241a4324eb7326adfa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Decorations/GRASS 2-2.png using Guid(1ee73367054f56241a4324eb7326adfa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '00a1c43ec08f2b5d5ecfce557739c7f7') in 0.0188023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/CK/karsiori/TileMap/Backgrounds/BUSH - BACKGROUND.png
+  artifactKey: Guid(6e0fcddb85b3bfd4a9a26b3143f5d12a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Backgrounds/BUSH - BACKGROUND.png using Guid(6e0fcddb85b3bfd4a9a26b3143f5d12a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '18e2d6489858914f4df455800c2d3289') in 0.0191272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CK/karsiori/TileMap/Backgrounds/VINES - Second.png
+  artifactKey: Guid(c3909c99bf845a24db9a162d677b6398) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Backgrounds/VINES - Second.png using Guid(c3909c99bf845a24db9a162d677b6398) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '85f9ed44582058dba588bd38c53e4bae') in 0.0182959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Buttons/Button Fram 256px.png
+  artifactKey: Guid(a8292d7c3170a7348accf3d85c0e7359) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Buttons/Button Fram 256px.png using Guid(a8292d7c3170a7348accf3d85c0e7359) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b8471afe750cf6c66c2f073e23a9754c') in 0.0192642 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_26.asset
+  artifactKey: Guid(5b1b6f6e234b6f246be8ac8efcf00cbc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_26.asset using Guid(5b1b6f6e234b6f246be8ac8efcf00cbc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '50a52495b4f93bef8dd8da589455e97c') in 0.0158408 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_18.asset
+  artifactKey: Guid(077ce259dc0997241be9e537bf5662dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_18.asset using Guid(077ce259dc0997241be9e537bf5662dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e8862e2813a8753edf168ffce86a270b') in 0.0140447 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Misc/LoadingHighlight 512px.png
+  artifactKey: Guid(b6f33d10c75334f4884f8d7baddc69f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Misc/LoadingHighlight 512px.png using Guid(b6f33d10c75334f4884f8d7baddc69f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '79f496c5654acaf1240db5dbbcd6b01a') in 0.0199545 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_57.asset
+  artifactKey: Guid(3a2a73ee7d3ba0c4ebd81cde7c19fb83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_57.asset using Guid(3a2a73ee7d3ba0c4ebd81cde7c19fb83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2fb7a2e37ee85ed65e40eba78318d8da') in 0.0160884 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_13.asset
+  artifactKey: Guid(0093f13f48b3cd24dad4ba4d67cd8409) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_13.asset using Guid(0093f13f48b3cd24dad4ba4d67cd8409) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '142c258e0cbb1db0f92e3d6eb2cee0ea') in 0.0158711 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_72.asset
+  artifactKey: Guid(35a002b44883d0942929e424d3c5bb5e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_72.asset using Guid(35a002b44883d0942929e424d3c5bb5e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2571669b9671fab0e58af10b86808ef3') in 0.0152968 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_0.asset
+  artifactKey: Guid(ad573af9e5caa10478408d2df852f5f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_0.asset using Guid(ad573af9e5caa10478408d2df852f5f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ddc755fff17b1e709cd418e85fbd0dc1') in 0.0165826 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Jared/UI
+  artifactKey: Guid(3970789cbf8aefb45b0e1da55b854c3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/UI using Guid(3970789cbf8aefb45b0e1da55b854c3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '781d78fc73993cbf6cf1081a657140b7') in 0.0128355 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/CK/Script/Level4EventTrigger.cs
+  artifactKey: Guid(8f1ecba740a4a234e9622cbed23e6707) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Script/Level4EventTrigger.cs using Guid(8f1ecba740a4a234e9622cbed23e6707) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5652a37000da6ab8315be4b0a75b1d5a') in 0.012866 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_27.asset
+  artifactKey: Guid(de486fe804d2dc647845caefa2b7415c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_27.asset using Guid(de486fe804d2dc647845caefa2b7415c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '034975a599c46fd228cc3d65f11a532e') in 0.0150095 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CK/Cainos/Pixel Art Platformer - Village Props/Material/FX
+  artifactKey: Guid(b9b835b7372776a458251d0009faeb40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Cainos/Pixel Art Platformer - Village Props/Material/FX using Guid(b9b835b7372776a458251d0009faeb40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a3bc367698ff1fa1e1f3e247222e67eb') in 0.0136165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scenes/Demos/Demo1
+  artifactKey: Guid(8906120281d5fff41b90a95901379b0b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scenes/Demos/Demo1 using Guid(8906120281d5fff41b90a95901379b0b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2eff495d2e72d153c7c8bf5158baf8c4') in 0.0134743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Cursors/Cursor 6 64px.png
+  artifactKey: Guid(e4e13a8e226be7c40a05c1b444b03d01) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Cursors/Cursor 6 64px.png using Guid(e4e13a8e226be7c40a05c1b444b03d01) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1fda24269dbfb6acdc2b4ddd074ed479') in 0.019775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Animations/Camera/MainMenuCam.controller
+  artifactKey: Guid(e1270baf4fb10bc43b7694b66604eb68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Animations/Camera/MainMenuCam.controller using Guid(e1270baf4fb10bc43b7694b66604eb68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '561a1e41734bdf576c657cefd353a9f6') in 0.0159776 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/CK/Cainos/Pixel Art Platformer - Village Props/Prefab
+  artifactKey: Guid(8d3b16bf124f65b49b22817d94a88022) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Cainos/Pixel Art Platformer - Village Props/Prefab using Guid(8d3b16bf124f65b49b22817d94a88022) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bee6070d1089242de87c1617770973a2') in 0.0125227 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/CK/Prefab/Background.prefab
+  artifactKey: Guid(363563ef2b705b94a9c86941824d4bf9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Prefab/Background.prefab using Guid(363563ef2b705b94a9c86941824d4bf9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '99dbc5f64b85cccc6806b814783cfdfd') in 0.0192133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CK/karsiori
+  artifactKey: Guid(d158551a79d08b447b4a2b23ce783176) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori using Guid(d158551a79d08b447b4a2b23ce783176) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '50ff33d550156b4b23c1bc81bd793059') in 0.0124926 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckMusicVolume.cs
+  artifactKey: Guid(ad149d53679afc04782ee02fa3e008d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckMusicVolume.cs using Guid(ad149d53679afc04782ee02fa3e008d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '38ba3acd697fafa2fbf97121f69ee23a') in 0.0141233 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/SlimUI/Data/ThemeSettings_ModernMenuUI.asset
+  artifactKey: Guid(e00c7d2bc58a2424b8dc09ecdafdb067) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Data/ThemeSettings_ModernMenuUI.asset using Guid(e00c7d2bc58a2424b8dc09ecdafdb067) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c0c419149e2d3804295ecc6592a1a6b8') in 0.017813 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/CK/karsiori/TileMap/Decorations/GRASS 3-2.png
+  artifactKey: Guid(86647a41d202c7d42bb73668e9f329b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Decorations/GRASS 3-2.png using Guid(86647a41d202c7d42bb73668e9f329b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bb816fdcd253c214b19f9ac085ebfa15') in 0.0196663 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Animations/Elements/HighlightFade.anim
+  artifactKey: Guid(8e7e1ea2cd9147645a7352b9f511df2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Animations/Elements/HighlightFade.anim using Guid(8e7e1ea2cd9147645a7352b9f511df2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '48030ba8cd263e7bc438b1c94a871bd5') in 0.0151414 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Audio/Music/SFX_MusicSample.mp3
+  artifactKey: Guid(5ae5b4f05aaedda4bb073e24ee777fb3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Audio/Music/SFX_MusicSample.mp3 using Guid(5ae5b4f05aaedda4bb073e24ee777fb3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4ccca74fd487647d8cb81f71b3894575') in 0.1145619 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/CK/Script/LevelSparta.cs
+  artifactKey: Guid(5076138c1bce0e046abfe5cb04a85da2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Script/LevelSparta.cs using Guid(5076138c1bce0e046abfe5cb04a85da2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4bb8a2b627ab0ae7980498836952c0e7') in 0.01338 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/script
+  artifactKey: Guid(33d172462a366d94ab92ba49f63d36eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/script using Guid(33d172462a366d94ab92ba49f63d36eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b9adbed80a11eb0a1956881c982e039e') in 0.0137024 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/CK/karsiori/TileMap/Decorations/BUSH FOREGROUND 1-2.png
+  artifactKey: Guid(172cec936be54c1419615eb2b96b32a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Decorations/BUSH FOREGROUND 1-2.png using Guid(172cec936be54c1419615eb2b96b32a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'db9280637537da61c2cdd3c622ddc65b') in 0.0189637 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/CK/karsiori/TileMap/Material/New Physics Material 2D.physicsMaterial2D
+  artifactKey: Guid(3b4e730b6b0a88f4f933a641f8b82695) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Material/New Physics Material 2D.physicsMaterial2D using Guid(3b4e730b6b0a88f4f933a641f8b82695) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0e152fe47ca477ad69e4ac6a503c0bb1') in 0.0228147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Fonts/LATO-BOLD SDF.asset
+  artifactKey: Guid(3199409928624324999b9336dd1ed8f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Fonts/LATO-BOLD SDF.asset using Guid(3199409928624324999b9336dd1ed8f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '167ab62230241d07d4f3061b7b9ab601') in 0.0320431 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Animations/Camera
+  artifactKey: Guid(412d985cc5f14114a8b2bab1bc447e32) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Animations/Camera using Guid(412d985cc5f14114a8b2bab1bc447e32) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '43ff7a254d56ae0d7dc49c0cefbfd74b') in 0.0134381 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader
+  artifactKey: Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader using Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '254feebd623cb00997dba89229d78bcf') in 0.014084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro.cginc
+  artifactKey: Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMPro.cginc using Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f602fb51e57bd6ae952a2cbae7a77bf') in 0.0139285 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_74.asset
+  artifactKey: Guid(3061cf2f556e3f84989a17004da8c87c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_74.asset using Guid(3061cf2f556e3f84989a17004da8c87c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '342054d51d40728f33a4fc3d975172be') in 0.0148768 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_62.asset
+  artifactKey: Guid(faea2e6c5379be3489f734414daa59f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_62.asset using Guid(faea2e6c5379be3489f734414daa59f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b8fdb5369c77de64da5daae68fe91949') in 0.0153715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scenes/READMESettings.lighting
+  artifactKey: Guid(b4d0047d2ec82084095a67ec2c61a97b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scenes/READMESettings.lighting using Guid(b4d0047d2ec82084095a67ec2c61a97b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)LightingSettings: switching bake backend from 2 to 1.
+ -> (artifact id: 'e12cf00b62f2624c429ba382b73934cd') in 0.023273 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Fonts/Poppins-Bold SDF.asset
+  artifactKey: Guid(59ee34472c5892a4196858080cc2141e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Fonts/Poppins-Bold SDF.asset using Guid(59ee34472c5892a4196858080cc2141e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3aa02f9d22861b6c2122c86fad78245a') in 0.0225905 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Buttons/Handle Solid 128px.png
+  artifactKey: Guid(8480de0448ee588459c5da29fd196fb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Buttons/Handle Solid 128px.png using Guid(8480de0448ee588459c5da29fd196fb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e36f6117c1c485962f3e8f4763e691a6') in 0.0160325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Prefabs/Canvas Templates
+  artifactKey: Guid(2015e3eb67695c54c8426b2bcebdd78c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Prefabs/Canvas Templates using Guid(2015e3eb67695c54c8426b2bcebdd78c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0d34516f37c00f5b3e26f1fe0795e822') in 0.0124008 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/CK/karsiori/TileMap/Backgrounds/WOODS - Third.png
+  artifactKey: Guid(45367da5e1f745b4daacb977484a3704) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Backgrounds/WOODS - Third.png using Guid(45367da5e1f745b4daacb977484a3704) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e5a836564a87a3834fcf4f9dfda3f903') in 0.0174945 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Julius/PrefabJ/Platform.prefab
+  artifactKey: Guid(4e24a5eb24b08964786b4994db661eff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Julius/PrefabJ/Platform.prefab using Guid(4e24a5eb24b08964786b4994db661eff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '950bf5078b6d0190da05e92d4f36af3f') in 0.0184068 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_64.asset
+  artifactKey: Guid(df52d654f80c6f843a559c24812871d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_64.asset using Guid(df52d654f80c6f843a559c24812871d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd5a8e67600d9f82eed45adc33aaa5a87') in 0.015377 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/CK/karsiori/TileMap/Decorations/BUSH FOREGROUND 1-5.png
+  artifactKey: Guid(441f0c2aca2fff545bc517e6f139dcd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Decorations/BUSH FOREGROUND 1-5.png using Guid(441f0c2aca2fff545bc517e6f139dcd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dfce3bf81d5b66d9d515fb39e2bd885c') in 0.0182644 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/CK/karsiori/TileMap/Backgrounds/WOODS - First.png
+  artifactKey: Guid(4a0bf6774f40eeb419adfda6b54d5c1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Backgrounds/WOODS - First.png using Guid(4a0bf6774f40eeb419adfda6b54d5c1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'db2625e4aa36de70f315816f02410df9') in 0.0171132 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+  artifactKey: Guid(fe393ace9b354375a9cb14cdbbc28be4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader using Guid(fe393ace9b354375a9cb14cdbbc28be4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fa197e34b81ff4a2365a378d013a4a7e') in 0.0144219 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_35.asset
+  artifactKey: Guid(82a0ff2832f81a6419401c36942e6ab4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_35.asset using Guid(82a0ff2832f81a6419401c36942e6ab4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '965611cf0234151f230942064a1ddfe8') in 0.0150311 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/SlimUI/Editor
+  artifactKey: Guid(88df4e9be82bffb49889dbf796562f17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Editor using Guid(88df4e9be82bffb49889dbf796562f17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4e362c14e3a83c82c61534109a16bc2f') in 0.0128204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scenes/Demos/Demo1Settings.lighting
+  artifactKey: Guid(8fbf084e5d01545419b4acf966ede8db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scenes/Demos/Demo1Settings.lighting using Guid(8fbf084e5d01545419b4acf966ede8db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)LightingSettings: switching bake backend from 2 to 1.
+ -> (artifact id: 'c1d4af4b93e366816941f592be3ee535') in 0.0163547 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scripts
+  artifactKey: Guid(e417b2d8bfe6b964eb44397f0ba98190) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scripts using Guid(e417b2d8bfe6b964eb44397f0ba98190) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1e4f9ce4fedb23a2dea641c7f7a1ffc0') in 0.0130495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_17.asset
+  artifactKey: Guid(d0ba0aece1cfe864ca3317c8391ef9b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_17.asset using Guid(d0ba0aece1cfe864ca3317c8391ef9b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b913a0a2ad93dd211226fbff57c71b23') in 0.0146188 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials
+  artifactKey: Guid(731f1baa9d144a9897cb1d341c2092b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials using Guid(731f1baa9d144a9897cb1d341c2092b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b046d2bd05e20c3bf8e0e9c65207c2e8') in 0.0123259 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Animations/Panels/WindowPopUpSmall.controller
+  artifactKey: Guid(e03b9769477452047863714a832ce32e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Animations/Panels/WindowPopUpSmall.controller using Guid(e03b9769477452047863714a832ce32e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5aaf8c2ff1573c4adec42817f4c0dee7') in 0.0128726 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt
+  artifactKey: Guid(6e59c59b81ab47f9b6ec5781fa725d2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt using Guid(6e59c59b81ab47f9b6ec5781fa725d2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c0edde023f5966f64d3886abcd91d624') in 0.013002 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/CK/karsiori/TileMap/Backgrounds
+  artifactKey: Guid(d74bfa70216838f48920b22d92b9b272) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Backgrounds using Guid(d74bfa70216838f48920b22d92b9b272) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3f20ae03a12cab7e229382293671cdef') in 0.0120678 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
+  artifactKey: Guid(c8d12adcee749c344b8117cf7c7eb912) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader using Guid(c8d12adcee749c344b8117cf7c7eb912) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ed1c03b1facc058788e91ba2c543dca') in 0.0149464 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Jared/Scripts
+  artifactKey: Guid(30fd54d449f5acb4fa5878de40ae421a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/Scripts using Guid(30fd54d449f5acb4fa5878de40ae421a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b62a419a16ea072bb14441223eb3fc9a') in 0.0118795 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Audio/Clicks/SFX_Click_Punch.ogg
+  artifactKey: Guid(37c9133889e2bfc4296ead93a281acc2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Audio/Clicks/SFX_Click_Punch.ogg using Guid(37c9133889e2bfc4296ead93a281acc2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bdea2fef4d5bc2f1be730b19d8831fe8') in 0.0300564 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_44.asset
+  artifactKey: Guid(3177598e71e6e6d4d884518d3f0eeb2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_44.asset using Guid(3177598e71e6e6d4d884518d3f0eeb2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '08fbfe7f82ec3cd8a36e6ded23932634') in 0.0149122 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Julius/ScriptJ/Player Movement.cs
+  artifactKey: Guid(84222bafbfb929f44a9feedcd81e0f5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Julius/ScriptJ/Player Movement.cs using Guid(84222bafbfb929f44a9feedcd81e0f5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0f4814ee987d73b0af04bc4d73739344') in 0.0129373 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Misc/Corner Detail 256px.png
+  artifactKey: Guid(2f7ad163b654bf74085060307e13db4a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Misc/Corner Detail 256px.png using Guid(2f7ad163b654bf74085060307e13db4a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '901b3f232121c08f573f78e10d6af9fb') in 0.0159942 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_65.asset
+  artifactKey: Guid(9a2c4bd459586f145acf8cedccb4af24) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_65.asset using Guid(9a2c4bd459586f145acf8cedccb4af24) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '14f52ea1e513956b89d0eb6cfe25078e') in 0.0136663 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader
+  artifactKey: Guid(f7ada0af4f174f0694ca6a487b8f543d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader using Guid(f7ada0af4f174f0694ca6a487b8f543d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '88e7c31b7ef7ced85c9a19b9eecfaee5') in 0.0129175 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_33.asset
+  artifactKey: Guid(0aa13be0b5503e44994aa2ccd46e3e8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_33.asset using Guid(0aa13be0b5503e44994aa2ccd46e3e8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '099f461ac5d1e7faf2fc0b5fb3afc563') in 0.0136083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_6.asset
+  artifactKey: Guid(ff5d7bf85032bf64ea4ab58ad565ee45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_6.asset using Guid(ff5d7bf85032bf64ea4ab58ad565ee45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ba4a6319c0d30e476741d286f8dcd94') in 0.0135849 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Jared/animation/CatSpin.anim
+  artifactKey: Guid(e250cae403939254bacb1c9c9e989f50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/animation/CatSpin.anim using Guid(e250cae403939254bacb1c9c9e989f50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c4ecde08927235f437bd596dc4050556') in 0.0137365 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_52.asset
+  artifactKey: Guid(e0776e8f174f6b640b7fa4e9bf1b9187) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_52.asset using Guid(e0776e8f174f6b640b7fa4e9bf1b9187) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f4e89daf4ba7f3e3e504ee124fc2894f') in 0.0176354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Thumbnails/Cursor Controller Pro 256px.jpg
+  artifactKey: Guid(a1235d87f41399c419b03cc17336dc72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Thumbnails/Cursor Controller Pro 256px.jpg using Guid(a1235d87f41399c419b03cc17336dc72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd29662c81b08e950e87b02f74083244e') in 0.0180377 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Audio
+  artifactKey: Guid(4b50df0f5f90270479b4429d268d4598) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Audio using Guid(4b50df0f5f90270479b4429d268d4598) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e90d497ac029e1690d2fc580c48776cf') in 0.0122019 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scenes/Demos/Demo2MobileSettings.lighting
+  artifactKey: Guid(7f3e6730d174bbe408a8a791b96c3005) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scenes/Demos/Demo2MobileSettings.lighting using Guid(7f3e6730d174bbe408a8a791b96c3005) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)LightingSettings: switching bake backend from 2 to 1.
+ -> (artifact id: '48ba15520c65ca78d00c6f06927ef3e0') in 0.0145471 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/CK/Script
+  artifactKey: Guid(aae704d5f2f954844b4ffdc649b7eacb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Script using Guid(aae704d5f2f954844b4ffdc649b7eacb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8c8216e67565a943915c5fd33ebc6235') in 0.0119468 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor
+  artifactKey: Guid(25d96d07180452a4ab11ea4825652236) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor using Guid(25d96d07180452a4ab11ea4825652236) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2b5b9e3dcc8472e59891b69a475a08b9') in 0.0123485 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scripts/Managers
+  artifactKey: Guid(fd63ebf668c638d44bb521f6f0858fee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scripts/Managers using Guid(fd63ebf668c638d44bb521f6f0858fee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '27b71f62490bcadb6f0d53103e9338b5') in 0.0123935 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph
+  artifactKey: Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph using Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd099a15c34c2388b3612fd46e2853164') in 0.0118101 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_49.asset
+  artifactKey: Guid(d5cf73983213bdf4ebdf6308692316fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_49.asset using Guid(d5cf73983213bdf4ebdf6308692316fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bbe9b490d9242dce7bf8965ac5ca9ed7') in 0.0133912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/CK/Cainos/Common/Texture/Utils
+  artifactKey: Guid(f4866c9c87e6f2b479013c1e0ac75abc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Cainos/Common/Texture/Utils using Guid(f4866c9c87e6f2b479013c1e0ac75abc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a3e1d5cf6140b3a47a7062da4c007748') in 0.0127432 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/setting.unity
+  artifactKey: Guid(27fcdcbc4ce6389429b148194da0f079) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/setting.unity using Guid(27fcdcbc4ce6389429b148194da0f079) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c8d733610ef0c8c9cdc7aaae06ef729f') in 0.0130627 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_80.asset
+  artifactKey: Guid(8def8cfde5111094ea46b150be16f999) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_80.asset using Guid(8def8cfde5111094ea46b150be16f999) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '905711ea89445a3c685ef873bff6648f') in 0.0144632 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CK/Cainos/Pixel Art Platformer - Village Props/Prefab/PF Village Props - Sword.prefab
+  artifactKey: Guid(b8fd7e9f16def9745b8b8b4c3928d52d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Cainos/Pixel Art Platformer - Village Props/Prefab/PF Village Props - Sword.prefab using Guid(b8fd7e9f16def9745b8b8b4c3928d52d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '92ad51e6baa5a80a5b428e8dd246c0ca') in 0.015257 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_63.asset
+  artifactKey: Guid(60ca663bf4893084c92a767875f28c26) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_63.asset using Guid(60ca663bf4893084c92a767875f28c26) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f711ff3330f06a071d6aa91e520f4694') in 0.014569 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_56.asset
+  artifactKey: Guid(4d4880ae419443a47ad9cdd5b2b0272f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_56.asset using Guid(4d4880ae419443a47ad9cdd5b2b0272f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bffc236a3515c2acd823f4267230f5e8') in 0.0140327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Jared
+  artifactKey: Guid(e2a82634de8061f4bb4ea125711e7d6d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared using Guid(e2a82634de8061f4bb4ea125711e7d6d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '392b305acef2b67d667a495125730828') in 0.0129766 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_55.asset
+  artifactKey: Guid(575c86391df21464495585478ed89557) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_55.asset using Guid(575c86391df21464495585478ed89557) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f49534e6d49916b4dbca06c7ec8424c8') in 0.0138735 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/CK/Cainos/Pixel Art Platformer - Village Props
+  artifactKey: Guid(1f08d781702466b438d35aa7938d8030) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Cainos/Pixel Art Platformer - Village Props using Guid(1f08d781702466b438d35aa7938d8030) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '547753521cf253bb68ef940637525a45') in 0.0138618 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Misc/Detail 2 256px.png
+  artifactKey: Guid(fc4228f9270498248a1d3298777bf5da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Misc/Detail 2 256px.png using Guid(fc4228f9270498248a1d3298777bf5da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1bc922af8f6fe6f8aa8509307c45e41f') in 0.0161676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Misc
+  artifactKey: Guid(01d967555b8b1ed439458411434db147) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Misc using Guid(01d967555b8b1ed439458411434db147) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f862c4b2039fd43f6135779086db6f4a') in 0.0116328 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/TextMesh Pro/Resources/Sprite Assets
+  artifactKey: Guid(512a49d95c0c4332bdd98131869c23c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/Sprite Assets using Guid(512a49d95c0c4332bdd98131869c23c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7870389b0b22302a37be7ada46720ac9') in 0.0109402 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader
+  artifactKey: Guid(dd89cf5b9246416f84610a006f916af7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader using Guid(dd89cf5b9246416f84610a006f916af7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '14b4546c56e6665a593f50c8313c4769') in 0.0120481 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Animations/Elements
+  artifactKey: Guid(1ecfa7b5dc4015c4d97127497af11949) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Animations/Elements using Guid(1ecfa7b5dc4015c4d97127497af11949) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4ac7dcf76b0b3413614b964c643d74ba') in 0.011686 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Thumbnails
+  artifactKey: Guid(2f41a34c58fed7943890d8843a550b63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Thumbnails using Guid(2f41a34c58fed7943890d8843a550b63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2c64edae83f711b6e597e451a79b89f6') in 0.0120373 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_9.asset
+  artifactKey: Guid(b467cdb774d96404ab0bf719c7daff20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_9.asset using Guid(b467cdb774d96404ab0bf719c7daff20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5295b6494680b6b90050b6e8425e878a') in 0.0156021 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/SlimUI/Modern Menu 1/POST_ModernMenu.asset
+  artifactKey: Guid(e7593116ac2ca3b41a137dfec63d5faf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/POST_ModernMenu.asset using Guid(e7593116ac2ca3b41a137dfec63d5faf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8c768bc4858fa79b6582c172c18924f2') in 0.0145814 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Graphics/Cursors/Cursor 2 64px.png
+  artifactKey: Guid(c1812a1c719d6f54bb297561a4d9f853) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Graphics/Cursors/Cursor 2 64px.png using Guid(c1812a1c719d6f54bb297561a4d9f853) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'edd06c35f1f5abe1e35457cf34aa1290') in 0.0178789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Jared/animation/cat.controller
+  artifactKey: Guid(13c2a741daef17b45bd9d329e4ffa215) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/animation/cat.controller using Guid(13c2a741daef17b45bd9d329e4ffa215) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '230c8aa3592a9a2db5defaed25d5ce41') in 0.0136309 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Jared/spriteArt/frame 1.png
+  artifactKey: Guid(25fff3fbbeb087e459f3e3020890d6f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Jared/spriteArt/frame 1.png using Guid(25fff3fbbeb087e459f3e3020890d6f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '96760f82b76590e714c1c210ea2a3625') in 0.016266 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_50.asset
+  artifactKey: Guid(62436fafb1e405d46bb04f84d70c2d62) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_50.asset using Guid(62436fafb1e405d46bb04f84d70c2d62) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c85a69637dd200d8cd62eb1888164b5a') in 0.0150012 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_3.asset
+  artifactKey: Guid(0e842ce1003dd0e4faef6ac30bca5bf6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Tiles/Tilesheet - WOODS_3.asset using Guid(0e842ce1003dd0e4faef6ac30bca5bf6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '686d57313a6901e07241e55058050e4c') in 0.0147907 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Animations/Elements/FlashingText.controller
+  artifactKey: Guid(345208a0118a3874a967022de25300da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Animations/Elements/FlashingText.controller using Guid(345208a0118a3874a967022de25300da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e5c00fbc2cb5a7cfcd4aed00c62cde70') in 0.0140118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.json
+  artifactKey: Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.json using Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bbf62452093755cf3d460398bdae0afd') in 0.0132581 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/CK/Prefab
+  artifactKey: Guid(4ffaa8429944f48409395fd0cb084af5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Prefab using Guid(4ffaa8429944f48409395fd0cb084af5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b025d99234fc6952786a4786d4a56484') in 0.0122679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckSFXVolume.cs
+  artifactKey: Guid(51f7ab2135dc14b45b2acef27ecb59ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckSFXVolume.cs using Guid(51f7ab2135dc14b45b2acef27ecb59ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b1058112aed85a2697256179281546c') in 0.0128835 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/CK/karsiori/TileMap/Decorations/GRASS 1-2.png
+  artifactKey: Guid(968fb733146be924a9feb390a617f3e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/karsiori/TileMap/Decorations/GRASS 1-2.png using Guid(968fb733146be924a9feb390a617f3e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '19b3612d7b3c850ab32a9d62cdafc733') in 0.0155192 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CK/Cainos/Common
+  artifactKey: Guid(b07da84b7f3bba44b9a75e50d115c0e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Cainos/Common using Guid(b07da84b7f3bba44b9a75e50d115c0e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '769faf74930c6282187a7bc09829985c') in 0.0116679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/CK/Cainos/Pixel Art Platformer - Village Props/Material
+  artifactKey: Guid(9ac4b6a5224288540a1d038f5d6101e2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CK/Cainos/Pixel Art Platformer - Village Props/Material using Guid(9ac4b6a5224288540a1d038f5d6101e2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2e0762375eb65a219d375e056d14703d') in 0.0124935 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/SlimUI/Modern Menu 1/Prefabs/Canvas Templates/Canvas_DefaultMobileTemplate1.prefab
+  artifactKey: Guid(72743ef12d244f244b6885f84968ea34) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SlimUI/Modern Menu 1/Prefabs/Canvas Templates/Canvas_DefaultMobileTemplate1.prefab using Guid(72743ef12d244f244b6885f84968ea34) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4e81a656ba063085c145af220266a690') in 0.0774393 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1213
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

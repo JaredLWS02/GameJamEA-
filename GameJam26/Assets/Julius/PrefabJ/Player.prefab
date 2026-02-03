@@ -138,7 +138,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
+  m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -151,7 +151,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &6663999810016146501
 CapsuleCollider2D:
@@ -205,10 +205,7 @@ MonoBehaviour:
   moveSpeed: 5
   jumpForce: 4
   groundCheck: {fileID: 2705569046363215612}
-  groundCheckDistance: 0.1
+  groundCheckDistance: 0.2
   jumpableLayer:
     serializedVersion: 2
-    m_Bits: 64
-  vacuumLayer:
-    serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 512
