@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - EventPoint
+  - Sparta
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -42,8 +45,13 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< HEAD
   - name: bg
     uniqueID: 909736731
+=======
+  - name: Background
+    uniqueID: 604398139
+>>>>>>> origin/CK
     locked: 0
   m_RenderingLayers:
   - Default
