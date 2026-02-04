@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 171693572}
   - component: {fileID: 171693571}
   - component: {fileID: 171693570}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Platform
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -674,11 +674,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
   jumpForce: 10
-  groundCheck: {fileID: 171693573}
-  groundCheckDistance: 0.2
-  jumpableLayer:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!70 &1221724912
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

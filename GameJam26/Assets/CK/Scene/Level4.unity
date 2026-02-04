@@ -841,7 +841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 589447540}
   - component: {fileID: 589447541}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: GroundRighttBox
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1057,7 +1057,7 @@ GameObject:
   - component: {fileID: 669546562}
   - component: {fileID: 669546564}
   - component: {fileID: 669546563}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4048,7 +4048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 798673318}
   - component: {fileID: 798673319}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: GroundLeftBox
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4558,12 +4558,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
   jumpForce: 10
-  groundCheck: {fileID: 1970860318}
-  groundCheckDistance: 0.2
-  jumpableLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  isGrounded: 0
 --- !u!70 &1221724912
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4701,7 +4695,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7400457}
-  - {fileID: 1970860318}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1318211995
@@ -4839,7 +4832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFollow
   speed: 3
   defeatUI: {fileID: 1546446160}
-  player: {fileID: 1221724915}
+  player: {fileID: 0}
 --- !u!70 &1318212001
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5404,9 +5397,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1696631191}
   - component: {fileID: 1696631190}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Grid
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5532,37 +5525,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1970860317
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1970860318}
-  m_Layer: 0
-  m_Name: groundcheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1970860318
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970860317}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.061, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1221724915}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
