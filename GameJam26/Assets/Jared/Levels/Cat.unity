@@ -1264,11 +1264,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 10
   jumpForce: 15
-  groundCheck: {fileID: 258009645}
-  groundCheckDistance: 1
-  jumpableLayer:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!61 &1799354802
 BoxCollider2D:
   m_ObjectHideFlags: 0
