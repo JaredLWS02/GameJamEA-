@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class openLevel : MonoBehaviour
 {
+    public GameObject Catpanel;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,7 +17,7 @@ public class openLevel : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerStay2D(Collider2D col)
     {
         if(col.gameObject.tag == "Player" )
         {
