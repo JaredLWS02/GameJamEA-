@@ -2471,7 +2471,7 @@ MonoBehaviour:
   moveSpeed: 10
   jumpForce: 15
   groundCheck: {fileID: 258009645}
-  groundCheckDistance: 1
+  groundCheckDistance: 0.2
   jumpableLayer:
     serializedVersion: 2
     m_Bits: 512
