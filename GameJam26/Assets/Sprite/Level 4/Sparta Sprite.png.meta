@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 01933794b3626144da694fcbb64c56ed
+guid: 7a11a2579de7bce4fba34fde7e81dbd1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sparta Sprite Sheet_0
+      name: Sparta Sprite_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,14 +125,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 240cd16ea75662140b8b0cc1a59c9819
-      internalID: 1925509514
+      spriteID: 803fa371cf605f14a9c42fefe9c74ad6
+      internalID: 1771539480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sparta Sprite Sheet_1
+      name: Sparta Sprite_1
       rect:
         serializedVersion: 2
         x: 512
@@ -147,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a31418dfcfbd694989535ccd6cc8931
-      internalID: 87420089
+      spriteID: 43fe8af92ce83194a856d4cd655ba2ca
+      internalID: 109337858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sparta Sprite Sheet_2
+      name: Sparta Sprite_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -169,14 +169,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b70e0374c71448d4592b3f8c756a0aad
-      internalID: 1995647005
+      spriteID: 8f7bd7946f8fc6544a7919e83aaa06bb
+      internalID: -57573079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sparta Sprite Sheet_3
+      name: Sparta Sprite_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -191,14 +191,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1f6c32838b838a4795bee8abe4166d1
-      internalID: -161531280
+      spriteID: 2c50014d8d167df48b6bfd4c0b0e4a9f
+      internalID: 130740362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sparta Sprite Sheet_4
+      name: Sparta Sprite_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -213,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dea7d4f40ca3eeb42a12bcdff3463d1f
-      internalID: 215991060
+      spriteID: 2fac75c768444ee458f8c35dafaeb495
+      internalID: 1128286335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sparta Sprite Sheet_5
+      name: Sparta Sprite_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -235,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d000c26bb03a39641be180836692fc94
-      internalID: -1919559831
+      spriteID: 2363b47b628f3e144a01617c29f0aad3
+      internalID: 74640810
       vertices: []
       indices: 
       edges: []
@@ -245,7 +245,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b433e920f37607847b4da45bb0ebdbfb
+    spriteID: fd1930185fd24d047a524da3bf2959f5
     internalID: 0
     vertices: []
     indices: 
@@ -257,12 +257,12 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Sparta Sprite Sheet_0: 1925509514
-      Sparta Sprite Sheet_1: 87420089
-      Sparta Sprite Sheet_2: 1995647005
-      Sparta Sprite Sheet_3: -161531280
-      Sparta Sprite Sheet_4: 215991060
-      Sparta Sprite Sheet_5: -1919559831
+      Sparta Sprite_0: 1771539480
+      Sparta Sprite_1: 109337858
+      Sparta Sprite_2: -57573079
+      Sparta Sprite_3: 130740362
+      Sparta Sprite_4: 1128286335
+      Sparta Sprite_5: 74640810
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
