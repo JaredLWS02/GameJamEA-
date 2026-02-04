@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class openLevel : MonoBehaviour
 {
     public GameObject Catpanel;
+    public GameObject interactables;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,9 +20,31 @@ public class openLevel : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Player" )
+        if (interactables != null && !Catpanel.activeSelf)
         {
+            interactables.SetActive(true);
+        }
+        else
+        {
+            interactables.SetActive(false);
+        }
+            if (col.gameObject.tag == "Player" 
+            && Input.GetKeyDown(KeyCode.E) 
+            && !Catpanel.activeSelf )
+            {
+             Debug.Log("Pressed E");
+            if (Catpanel != null)
+                {
+                    Catpanel.SetActive(true);
+                }
+            }
+    }
 
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Player" && interactables != null)
+        {
+            interactables.SetActive(false);
         }
     }
 }
