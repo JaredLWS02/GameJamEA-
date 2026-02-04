@@ -38,6 +38,7 @@ public class SwordTrollSound : MonoBehaviour
     {
         if (other.CompareTag("Player"))
             playerInside = true;
+        Debug.Log("blablabla");
     }
 
     // Detect when player leaves collision
