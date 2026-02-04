@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class openLevel : MonoBehaviour
 {
@@ -14,8 +15,11 @@ public class openLevel : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D()
+    void OnTriggerEnter2D(Collider2D col)
     {
+        if(col.gameObject.tag == "Player" )
+        {
 
+        }
     }
 }
