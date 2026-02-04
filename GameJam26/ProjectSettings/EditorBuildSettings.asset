@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Ang/setting.unity
     guid: 27fcdcbc4ce6389429b148194da0f079
   - enabled: 1
-    path: Assets/Julius/ScenesJ/Level Selection.unity
+    path: Assets/Scenes/Level Selection.unity
     guid: 2d5b5928518682c48b117be4dc65d8e1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
