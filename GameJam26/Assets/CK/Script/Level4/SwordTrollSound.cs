@@ -6,6 +6,7 @@ public class SwordTrollSound : MonoBehaviour
     public AudioSource audioSource;  // Assign the sound to play
     public float cooldown = 10f;     // 10 seconds cooldown
 
+    public GameObject InteractUI;
     private bool canClick = true;
     private bool playerInside = false;
 
@@ -38,6 +39,7 @@ public class SwordTrollSound : MonoBehaviour
     {
         if (other.CompareTag("Player"))
             playerInside = true;
+        InteractUI.SetActive(true);
     }
 
     // Detect when player leaves collision
@@ -45,5 +47,6 @@ public class SwordTrollSound : MonoBehaviour
     {
         if (other.CompareTag("Player"))
             playerInside = false;
+        InteractUI.SetActive(false);
     }
 }
