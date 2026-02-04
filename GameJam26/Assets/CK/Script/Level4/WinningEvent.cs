@@ -34,6 +34,7 @@ public class WinningEvent : MonoBehaviour
             var moveScript = playerObj.GetComponent<PlayerMovement>();
             if (moveScript != null)
                 moveScript.enabled = false;
+         
         }
 
         Debug.Log("Play this is Sparta animation");

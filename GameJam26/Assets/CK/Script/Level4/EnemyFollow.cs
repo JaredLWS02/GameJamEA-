@@ -3,11 +3,18 @@ using UnityEngine;
 public class EnemyFollow : MonoBehaviour
 {
     public float speed = 3f;
-    public GameObject defeatUI;
+    public DefeatUI defeatUI;
 
     public Transform player;
     private Rigidbody2D rb;
     private bool stopMoving = false;
+
+    [Header("Audio")]
+    public AudioSource runAudio;
+    public float playInterval = 4f;
+    private float soundTimer = 0f;
+    private bool hasPlayedRunSound = false;
+
 
     void Start()
     {
@@ -21,9 +28,6 @@ public class EnemyFollow : MonoBehaviour
 
         player = playerObj.transform;
         rb = GetComponent<Rigidbody2D>();
-
-        if (defeatUI != null)
-            defeatUI.SetActive(false);
     }
 
     void Update()
@@ -31,11 +35,43 @@ public class EnemyFollow : MonoBehaviour
         if (player == null || stopMoving)
         {
             rb.linearVelocity = Vector2.zero;
+            StopRunSound();
             return;
         }
 
+        // Enemy moving
         Vector2 direction = (player.position - transform.position).normalized;
         rb.linearVelocity = direction * speed;
+
+        HandleRunSound();
+    }
+
+    void HandleRunSound()
+    {
+        if (!hasPlayedRunSound)
+        {
+            runAudio.Play();          // play immediately
+            hasPlayedRunSound = true;
+            soundTimer = 0f;
+            return;
+        }
+
+        soundTimer += Time.deltaTime;
+
+        if (soundTimer >= playInterval)
+        {
+            runAudio.Play();
+            soundTimer = 0f;
+        }
+    }
+
+    void StopRunSound()
+    {
+        soundTimer = 0f;
+        hasPlayedRunSound = false;
+
+        if (runAudio.isPlaying)
+            runAudio.Stop();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -67,15 +103,15 @@ public class EnemyFollow : MonoBehaviour
 
         stopMoving = true;
         rb.linearVelocity = Vector2.zero;
+        StopRunSound();
 
-        if (defeatUI != null)
-            defeatUI.SetActive(true);
+        defeatUI.isDefeat();
     }
 
     void StopEnemy()
     {
         stopMoving = true;
         rb.linearVelocity = Vector2.zero;
+        StopRunSound();
     }
-
 }
