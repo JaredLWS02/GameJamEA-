@@ -32,7 +32,8 @@ public class openLevel : MonoBehaviour
             && Input.GetKeyDown(KeyCode.E) 
             && !Catpanel.activeSelf )
             {
-                if (Catpanel != null)
+             Debug.Log("Pressed E");
+            if (Catpanel != null)
                 {
                     Catpanel.SetActive(true);
                 }
