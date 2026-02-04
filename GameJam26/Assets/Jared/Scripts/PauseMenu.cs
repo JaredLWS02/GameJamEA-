@@ -9,7 +9,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject panel;
     public GameObject catAni;
     public GameObject pauseMenuUI;
-    private Animator animator;  
+    private Animator animator;
+    public MonoBehaviour playerMove;
+    public bool spin = false;
 
     void Start()
     {
@@ -31,10 +33,12 @@ public class PauseMenu : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (panel.activeSelf)
         {
-            if (panel.activeSelf)
-            {
+            playerMove.enabled = false;
+            if (Input.GetKeyDown(KeyCode.F))
+            {   
+                spin = true;
                 payRespect();
             }
         }
@@ -61,6 +65,7 @@ public class PauseMenu : MonoBehaviour
     public void closePanel()
         {
             panel.SetActive(false);
+            playerMove.enabled = true;
         }
 
     public void QuitGame()

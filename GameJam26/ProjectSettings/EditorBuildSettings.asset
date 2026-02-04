@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Ang/a_scene/mainmenu.unity
     guid: b050e086a6693cc4d87fb142763961d7
   - enabled: 1
-    path: Assets/Ang/setting.unity
+    path: Assets/setting.unity
     guid: 27fcdcbc4ce6389429b148194da0f079
   - enabled: 1
     path: Assets/Julius/ScenesJ/Level Selection.unity
