@@ -37,7 +37,11 @@ public class ObjectSpawner : MonoBehaviour
         float randomX = Random.Range(-spawnXRange, spawnXRange);
         Vector3 spawnPos = transform.position + new Vector3(randomX, spawnY, 0f);
 
-        Instantiate(chosen, spawnPos, Quaternion.identity);
+        // Use pool if available, otherwise fallback to Instantiate
+        if (ObjectPooler.Instance != null)
+            ObjectPooler.Instance.SpawnFromPool(chosen, spawnPos, Quaternion.identity);
+        else
+            Instantiate(chosen, spawnPos, Quaternion.identity);
     }
 
     // Draw the spawn range in the Scene view when the object is selected

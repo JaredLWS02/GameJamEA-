@@ -49,7 +49,7 @@ MonoBehaviour:
   - {fileID: 8250353351619370948, guid: d6f5dfe0f00bb8d49bd82dda8c51d176, type: 3}
   - {fileID: 6886880493630917906, guid: df88acb74b8d0144384adf25992bfc7f, type: 3}
   - {fileID: 5554628581152974161, guid: 35b1f37af502b9644a9194dd6e101918, type: 3}
-  spawnInterval: 1
+  spawnInterval: 0.7
   spawnXRange: 10.08
   spawnY: -1.84
   gizmoColor: {r: 1, g: 0.06252845, b: 0, a: 1}
