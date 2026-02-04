@@ -14,6 +14,8 @@ public class WinningEvent : MonoBehaviour
     private bool enemyInside = false;
     private bool eventTriggered = false; // Only trigger once
 
+    public Animator animator;
+
     void Update()
     {
         // Check if both are inside
@@ -36,7 +38,7 @@ public class WinningEvent : MonoBehaviour
                 moveScript.enabled = false;
          
         }
-
+        animator.SetBool("isSparta", true);
         Debug.Log("Play this is Sparta animation");
     }
 
