@@ -5,7 +5,8 @@ public class openLevel : MonoBehaviour
 {
     public GameObject Catpanel;
     public GameObject interactables;
-
+    public MonoBehaviour playerMovement;
+    private bool playerInTrigger = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,36 +16,49 @@ public class openLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void OnTriggerStay2D(Collider2D col)
-    {
-        if (interactables != null && !Catpanel.activeSelf)
+        if (playerInTrigger)
         {
-            interactables.SetActive(true);
-        }
-        else
-        {
-            interactables.SetActive(false);
-        }
-            if (col.gameObject.tag == "Player" 
-            && Input.GetKeyDown(KeyCode.E) 
-            && !Catpanel.activeSelf )
+            // If panel is closed and interactables is inactive, show the interact prompt again
+            if (!Catpanel.activeSelf && (interactables != null) && !interactables.activeSelf)
             {
-             Debug.Log("Pressed E");
-            if (Catpanel != null)
+                interactables.SetActive(true);
+            }
+
+            // Handle opening/closing the panel on E press (toggle)
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                bool isActive = Catpanel.activeSelf;
+                Catpanel.SetActive(!isActive);
+                interactables.SetActive(isActive); // Hide interactables if panel opens, show if closes
+                if (!playerMovement.enabled)
                 {
-                    Catpanel.SetActive(true);
+                    playerMovement.enabled = true;
                 }
             }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Player"))
+        {
+            playerInTrigger = true;
+            if (interactables != null && !Catpanel.activeSelf)
+            {
+                interactables.SetActive(true);
+            }
+        }
     }
 
     void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player" && interactables != null)
+        if (col.CompareTag("Player"))
         {
-            interactables.SetActive(false);
+            playerInTrigger = false;
+            if (interactables != null)
+            {
+                interactables.SetActive(false);
+            }
         }
     }
 }
