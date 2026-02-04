@@ -750,7 +750,7 @@ MonoBehaviour:
   dodgesPerPercent: 1
   winPanel: {fileID: 1787105790}
   pauseOnWin: 1
-  bgmClip: {fileID: 8300000, guid: bdc63c244f88d034d899eb1156262103, type: 3}
+  bgmClip: {fileID: 8300000, guid: 47702979b7912da4995670ea3a2c845f, type: 3}
   playBgmOnStart: 0
   bgmVolume: 1
   revealSlider: {fileID: 299263096}

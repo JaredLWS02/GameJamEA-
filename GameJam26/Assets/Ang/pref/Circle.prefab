@@ -145,3 +145,6 @@ MonoBehaviour:
   minFallSpeed: 8
   maxFallSpeed: 25
   randomizeOnEnable: 1
+  dodgeClip: {fileID: 8300000, guid: 01692ed027c42734dbcf292bc9d21745, type: 3}
+  hitClip: {fileID: 8300000, guid: 2b7f8edc69098634e969058d40f98454, type: 3}
+  soundVolume: 0.5
