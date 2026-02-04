@@ -23,19 +23,12 @@ UserSettings/
 *.mdb
 *.opendb
 *.VC.db
-*.pidb.meta
 sysinfo.txt
 
 # === Visual Studio / Rider / IDE files ===
 .vscode/
 .vs/
 .idea/
-*.csproj
-*.sln
-*.user
-*.suo
-*.tmp
-*.userprefs
 
 # === OS Generated Files ===
 .DS_Store
@@ -49,19 +42,11 @@ Icon?
 
 # === Logs and Crash Reports ===
 *.log
-[Ll]ogs/
 
-# === Auto-generated cache files ===
+# === Auto-generated cache / build artifacts ===
 *.apk
 *.aab
 *.unitypackage
 
-# === Crashlytics and other plugins (optional) ===
+# === Crashlytics and plugins (optional) ===
 crashlytics-build.properties
-
-# === Others ===
-*.pidb.meta
-
-# Uncomment if using JetBrains Rider
-# .idea/
-GameJam26/UserSettings/EditorUserSettings.asset
