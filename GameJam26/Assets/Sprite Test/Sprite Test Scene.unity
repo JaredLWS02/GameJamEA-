@@ -674,6 +674,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
   jumpForce: 10
+  groundCheck: {fileID: 0}
+  groundCheckDistance: 0.2
+  jumpableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!70 &1221724912
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -978,7 +983,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!1001 &1059918535183251017
+--- !u!1001 &1083271731243646294
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -986,71 +991,55 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1250079479814463092, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 1.0009775
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250079479814463092, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250079479814463092, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.0009775
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250079479814463092, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3095212363403085890, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
-      propertyPath: m_Name
-      value: Stickman Sparta
-      objectReference: {fileID: 0}
-    - target: {fileID: 8335058928348996269, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
+    - target: {fileID: 7250334760329480580, guid: 580dd5a0d928b074d96ff40b7f763653, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -102.070366
+      value: -101.84477
       objectReference: {fileID: 0}
-    - target: {fileID: 8335058928348996269, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
+    - target: {fileID: 7250334760329480580, guid: 580dd5a0d928b074d96ff40b7f763653, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 57.617218
+      value: 62.66
       objectReference: {fileID: 0}
-    - target: {fileID: 8335058928348996269, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
+    - target: {fileID: 7250334760329480580, guid: 580dd5a0d928b074d96ff40b7f763653, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8335058928348996269, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
+    - target: {fileID: 7250334760329480580, guid: 580dd5a0d928b074d96ff40b7f763653, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8335058928348996269, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
+    - target: {fileID: 7250334760329480580, guid: 580dd5a0d928b074d96ff40b7f763653, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8335058928348996269, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
+    - target: {fileID: 7250334760329480580, guid: 580dd5a0d928b074d96ff40b7f763653, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8335058928348996269, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
+    - target: {fileID: 7250334760329480580, guid: 580dd5a0d928b074d96ff40b7f763653, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8335058928348996269, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
+    - target: {fileID: 7250334760329480580, guid: 580dd5a0d928b074d96ff40b7f763653, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8335058928348996269, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
+    - target: {fileID: 7250334760329480580, guid: 580dd5a0d928b074d96ff40b7f763653, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8335058928348996269, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
+    - target: {fileID: 7250334760329480580, guid: 580dd5a0d928b074d96ff40b7f763653, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8076432204859871921, guid: 580dd5a0d928b074d96ff40b7f763653, type: 3}
+      propertyPath: m_Name
+      value: Job Application
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4fe1d45581ef4774fbcf7e0725cf6a1f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 580dd5a0d928b074d96ff40b7f763653, type: 3}
 --- !u!1001 &1751938657829722309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1112,6 +1101,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ad32dd845637a2459eb754ffa3c5024, type: 3}
+--- !u!1001 &1786526475795003167
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 724467655122772655, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -98.19494
+      objectReference: {fileID: 0}
+    - target: {fileID: 724467655122772655, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 57.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 724467655122772655, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 724467655122772655, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 724467655122772655, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 724467655122772655, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 724467655122772655, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 724467655122772655, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 724467655122772655, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 724467655122772655, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421927076643786651, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_Name
+      value: Sickman Enemy Sparta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8299588134859169707, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1.0009775
+      objectReference: {fileID: 0}
+    - target: {fileID: 8299588134859169707, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8299588134859169707, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.0009775
+      objectReference: {fileID: 0}
+    - target: {fileID: 8299588134859169707, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a0561a8db6ce23b4ba154826437720d6, type: 3}
 --- !u!1001 &2089366507009936371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1236,7 +1298,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3213374506711358640, guid: 823a28999c4b11c41ae3678d4bb428b0, type: 3}
       propertyPath: m_Name
-      value: Stickman Jump
+      value: Stickman Player Jump
       objectReference: {fileID: 0}
     - target: {fileID: 3213374506711358640, guid: 823a28999c4b11c41ae3678d4bb428b0, type: 3}
       propertyPath: m_IsActive
@@ -1524,7 +1586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5715528280360016446, guid: f7a353a4e1c215c43b98b9ef410544cc, type: 3}
       propertyPath: m_Name
-      value: Stickman Walk
+      value: Stickman Player Walk
       objectReference: {fileID: 0}
     - target: {fileID: 5715528280360016446, guid: f7a353a4e1c215c43b98b9ef410544cc, type: 3}
       propertyPath: m_IsActive
@@ -1681,6 +1743,71 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9501ccd0f8a557c45b69064055a69d9e, type: 3}
+--- !u!1001 &9110447212515522385
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7139449066257960405, guid: 100eba533506be64e9ffb3549895f997, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -96.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139449066257960405, guid: 100eba533506be64e9ffb3549895f997, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 57.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139449066257960405, guid: 100eba533506be64e9ffb3549895f997, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139449066257960405, guid: 100eba533506be64e9ffb3549895f997, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139449066257960405, guid: 100eba533506be64e9ffb3549895f997, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139449066257960405, guid: 100eba533506be64e9ffb3549895f997, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139449066257960405, guid: 100eba533506be64e9ffb3549895f997, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139449066257960405, guid: 100eba533506be64e9ffb3549895f997, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139449066257960405, guid: 100eba533506be64e9ffb3549895f997, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139449066257960405, guid: 100eba533506be64e9ffb3549895f997, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8446883271275015199, guid: 100eba533506be64e9ffb3549895f997, type: 3}
+      propertyPath: m_Name
+      value: Stickman Player Kicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 8745081319959751755, guid: 100eba533506be64e9ffb3549895f997, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8745081319959751755, guid: 100eba533506be64e9ffb3549895f997, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 100eba533506be64e9ffb3549895f997, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1700,5 +1827,7 @@ SceneRoots:
   - {fileID: 3882662614299389053}
   - {fileID: 3566613823988162192}
   - {fileID: 5507746314095320036}
-  - {fileID: 1059918535183251017}
   - {fileID: 8486814773723243232}
+  - {fileID: 1786526475795003167}
+  - {fileID: 9110447212515522385}
+  - {fileID: 1083271731243646294}
