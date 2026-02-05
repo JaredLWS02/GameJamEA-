@@ -7,6 +7,7 @@ public class Level2Button : MonoBehaviour
     public string WronglevelName;
     public bool CorrentButton = false;
     private bool playerInside = false;
+    public GameObject UI;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -14,6 +15,7 @@ public class Level2Button : MonoBehaviour
         {
             playerInside = true;
             Debug.Log("Player entered");
+            UI.SetActive(true);
         }
     }
 
@@ -22,6 +24,7 @@ public class Level2Button : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = false;
+            UI.SetActive(false);
             
         }
     }
