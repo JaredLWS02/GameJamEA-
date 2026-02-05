@@ -57,7 +57,7 @@ public class VacuumPatrol : MonoBehaviour
     {
        
         yield return new WaitForSeconds(winCountdown);
-        audioManager.pl
+        audioManager.PlayBGM(audioManager.winBGM);
         Debug.Log("Player Wins!");
         
     }
