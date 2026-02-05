@@ -144,4 +144,8 @@ public class AudioManager : MonoBehaviour
         eventSFXSource.PlayOneShot(clip);
     }
 
+    public void PlayBGM(AudioClip clip)
+    {
+        musicSource.Play();
+    }
 }
