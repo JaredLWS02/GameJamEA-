@@ -10,10 +10,14 @@ public class VacuumPatrol : MonoBehaviour
     public LayerMask turnAroundLayer;
     public int winCountdown = 5;
     private AudioManager audioManager;
+    private SpriteRenderer spriteRenderer;
+    private PlayerMovement player;
     void FixedUpdate()
     {
         transform.position += new Vector3(direction * moveSpeed * Time.deltaTime, 0, 0);
         audioManager = GameObject.FindGameObjectWithTag("audioManager").GetComponent<AudioManager>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -57,12 +61,22 @@ public class VacuumPatrol : MonoBehaviour
     {
        
         yield return new WaitForSeconds(winCountdown);
-        audioManager.PlayBGM(audioManager.winBGM);
+        moveSpeed = 0;
+        player.OIIA();
+        audioManager.PlayWinBGM();
         Debug.Log("Player Wins!");
         
     }
     public void SpeedRandomize()
     {
         moveSpeed = Random.Range(1f, 40f);
+        if (moveSpeed <= 20f)
+        {
+            spriteRenderer.color = Color.green;
+        }
+        else
+        {
+            spriteRenderer.color= Color.white;
+        }
     }
 }

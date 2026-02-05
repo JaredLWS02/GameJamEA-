@@ -148,4 +148,9 @@ public class AudioManager : MonoBehaviour
     {
         musicSource.Play();
     }
+
+    public void PlayButtonSound()
+    { 
+        gameSFXSource.PlayOneShot(vacuumSFX);
+    }
 }
