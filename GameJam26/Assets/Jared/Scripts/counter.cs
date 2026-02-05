@@ -4,7 +4,7 @@ using System.Collections;
 public class counter : MonoBehaviour
 {
     [SerializeField] private Button lc;
-    [SerializeField] private int rc;
+    [SerializeField] private Button rc;
     private bool trig;
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private SpriteRenderer sr1;
@@ -21,8 +21,11 @@ public class counter : MonoBehaviour
         if (trig && Input.GetKeyDown(KeyCode.E))
         {
             StartCoroutine(pushed());
-            lc.count = 0;
-            rc = 0;
+            if (lc.count != 6 && rc.count != 7)
+            {
+                lc.count = 0;
+                rc.count = 0;
+            }
         }
     }
 
@@ -40,7 +43,7 @@ public class counter : MonoBehaviour
     {
         sr.enabled = false;
         sr1.enabled = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         sr1.enabled = false;
         sr.enabled = true;
     }
