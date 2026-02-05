@@ -68,37 +68,52 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void OnEnable()
     {
-        string activeSceneName = SceneManager.GetActiveScene().name;
-        if (activeSceneName == "Level Selection")
-        {     
-            musicSource.clip = mainmenuBGM;
-        }
-        else if (activeSceneName =="Level 1")
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        ChangeBGM(scene.name);
+    }
+
+    void ChangeBGM(string sceneName)
+    {
+        AudioClip newClip = null;
+
+        switch (sceneName)
         {
-            musicSource.clip = level1BGM;
-        }
-        else if (activeSceneName == "Level 2")
-        {
-            musicSource.clip = level2BGM;
-        }
-        else if (activeSceneName == "Level 3")
-        {
-            musicSource.clip = level3BGM;
-        }
-        else if (activeSceneName == "Level 4")
-        {
-            musicSource.clip = level4BGM;
-        }
-        else if (activeSceneName == "Level 5")
-        {
-            musicSource.clip = level5BGM;
+            case "Level Selection":
+                newClip = mainmenuBGM;
+                break;
+            case "Level 1":
+                newClip = level1BGM;
+                break;
+            case "Level 2":
+                newClip = level2BGM;
+                break;
+            case "Level 3":
+                newClip = level3BGM;
+                break;
+            case "Level 4":
+                newClip = level4BGM;
+                break;
+            case "Level 5":
+                newClip = level5BGM;
+                break;
         }
 
-        
-        musicSource.Play();
+        if (newClip != null && musicSource.clip != newClip)
+        {
+            musicSource.clip = newClip;
+            musicSource.Play();
+        }
     }
 
     public void PlayWinBGM()

@@ -5,16 +5,18 @@ public class Button2_5ButtonManger : MonoBehaviour
     public float timeLimit = 3f;
     public Level2_5Button buttonA;
     public Level2_5Button buttonB;
+    public Level2_5Door Door;
 
     public bool isBothPressed = false;
     public int pressedCount { get; private set; } = 0;
 
     private float timer;
     private bool timerRunning = false;
-
     public void ButtonPressed()
     {
         pressedCount++;
+        Door.sr.enabled = false;
+        Door.sr2.enabled = true;
 
         if (!timerRunning)
         {
@@ -52,5 +54,8 @@ public class Button2_5ButtonManger : MonoBehaviour
 
         buttonA.ResetButton();
         buttonB.ResetButton();
+        Door.sr.enabled = true;
+        Door.sr2.enabled = false;
+
     }
 }
