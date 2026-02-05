@@ -186,7 +186,7 @@ MonoBehaviour:
   level2BGM: {fileID: 0}
   level3BGM: {fileID: 0}
   level4BGM: {fileID: 0}
-  level5BGM: {fileID: 0}
+  level5BGM: {fileID: 8300000, guid: 49afb7061a93aa9408fcab94f164e813, type: 3}
   winBGM: {fileID: 0}
   loseBGM: {fileID: 0}
   extraBGM1: {fileID: 0}
