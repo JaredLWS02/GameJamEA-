@@ -99,9 +99,12 @@ public class ObjectPooler : MonoBehaviour
         return go;
     }
 
-    public void playgame()
+    public void restartgame()
     {
         SceneManager.LoadSceneAsync(2);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
     }
 
     public void home()

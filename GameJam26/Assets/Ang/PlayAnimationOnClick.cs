@@ -7,12 +7,17 @@ public class PlayAnimationOnClick : MonoBehaviour
 
     void Start()
     {
-        targetObject.SetActive(false); // hide at start
+        targetObject.SetActive(false);
     }
 
     public void PlayAnim()
     {
         targetObject.SetActive(true);
-        animator.SetTrigger("PlayAnimation");
+
+        // force animator to restart cleanly
+        animator.Rebind();
+        animator.Update(0f);
+
+        animator.SetBool("IsPlaying", true);
     }
 }
