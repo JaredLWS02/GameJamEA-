@@ -12,6 +12,9 @@ public class counter : MonoBehaviour
     [SerializeField] private SpriteRenderer hc2;
     [SerializeField] private SpriteRenderer h6;
     [SerializeField] private SpriteRenderer h7;
+    [SerializeField] private AudioSource sng;
+    [SerializeField] private AudioSource kid;
+    [SerializeField] private AudioSource button;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,6 +28,7 @@ public class counter : MonoBehaviour
     {
         if (trig && Input.GetKeyDown(KeyCode.E))
         {
+            button.Play();
             StartCoroutine(pushed());
             if (lc.count != 6 && rc.count != 7)
             {
@@ -37,6 +41,8 @@ public class counter : MonoBehaviour
                 hc2.enabled = false;
                 h6.enabled = true;
                 h7.enabled = true;
+                sng.enabled = true;
+                kid.enabled = true;
             }
             else
             {

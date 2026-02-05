@@ -10,6 +10,7 @@ public class Button : MonoBehaviour
     [SerializeField] private GameObject ball;
     [SerializeField] private GameObject objPos;
     [SerializeField] private Vector3 spawnPos;
+    [SerializeField] private AudioSource aud;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,6 +25,7 @@ public class Button : MonoBehaviour
     {
         if (trig && Input.GetKeyDown(KeyCode.E))
         {
+            aud.Play();
             StartCoroutine(pushed());
             spawn();
             count++;
