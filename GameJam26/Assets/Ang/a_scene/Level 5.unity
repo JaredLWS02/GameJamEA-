@@ -596,6 +596,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 47702979b7912da4995670ea3a2c845f, type: 3}
     - target: {fileID: 610723319853475316, guid: e64358ee55c002b4da28d6e35d0c57c3, type: 3}
+      propertyPath: eventSFX4
+      value: 
+      objectReference: {fileID: 8300000, guid: e24c2a0ce6100ed42bde4c9fb324a6ef, type: 3}
+    - target: {fileID: 610723319853475316, guid: e64358ee55c002b4da28d6e35d0c57c3, type: 3}
       propertyPath: vacuumSFX
       value: 
       objectReference: {fileID: 8300000, guid: 8de10145168db8e469a20f9db0ff91d3, type: 3}
