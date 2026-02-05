@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private AudioManager audioManager;
     private BackgroundColor backgroundColor;
     public GameObject nextLevel;
+   
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();

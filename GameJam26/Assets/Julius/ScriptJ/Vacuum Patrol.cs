@@ -11,13 +11,13 @@ public class VacuumPatrol : MonoBehaviour
     public int winCountdown = 5;
     private AudioManager audioManager;
     private SpriteRenderer spriteRenderer;
-    private PlayerMovement player;
+    private Level3PlayerMovement player;
     void FixedUpdate()
     {
         transform.position += new Vector3(direction * moveSpeed * Time.deltaTime, 0, 0);
         audioManager = GameObject.FindGameObjectWithTag("audioManager").GetComponent<AudioManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Level3PlayerMovement>();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
