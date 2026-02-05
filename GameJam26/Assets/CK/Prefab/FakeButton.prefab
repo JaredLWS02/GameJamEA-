@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Level2Button
   CorrectlevelName: Level Selection
-  WronglevelName: Level2_5
+  WronglevelName: Level2-5
   CorrentButton: 0
   UI: {fileID: 5481703531510691008}
 --- !u!61 &5841464307750054026
