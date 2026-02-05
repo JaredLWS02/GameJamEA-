@@ -12,7 +12,6 @@ public class Button2_5ButtonManger : MonoBehaviour
 
     private float timer;
     private bool timerRunning = false;
-
     public void ButtonPressed()
     {
         pressedCount++;

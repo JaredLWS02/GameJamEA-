@@ -6,17 +6,20 @@ public class Level2_5Button : MonoBehaviour
 
     private bool playerInside = false;
     private bool isPressed = false;
+    public GameObject UI;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
             playerInside = true;
+        UI.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
             playerInside = false;
+            UI.SetActive(false);
     }
 
     void Update()
