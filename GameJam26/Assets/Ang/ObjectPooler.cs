@@ -103,6 +103,11 @@ public class ObjectPooler : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(2);
     }
+
+    public void home()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
 }
 
 
