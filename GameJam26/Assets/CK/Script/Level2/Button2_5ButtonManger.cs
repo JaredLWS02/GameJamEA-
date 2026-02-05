@@ -12,11 +12,23 @@ public class Button2_5ButtonManger : MonoBehaviour
 
     private float timer;
     private bool timerRunning = false;
+
+    [Header("Audio")]
+    public AudioClip DoorClose;
+    public AudioClip DoorOpen;
+    public AudioSource DoorSound;
+    public bool isDoorOpen;
     public void ButtonPressed()
     {
         pressedCount++;
         Door.sr.enabled = false;
         Door.sr2.enabled = true;
+       
+        if (!isDoorOpen) {
+            isDoorOpen = true;
+            DoorSound.PlayOneShot(DoorOpen); 
+        }
+       
 
         if (!timerRunning)
         {
@@ -56,6 +68,7 @@ public class Button2_5ButtonManger : MonoBehaviour
         buttonB.ResetButton();
         Door.sr.enabled = true;
         Door.sr2.enabled = false;
+        DoorSound.PlayOneShot(DoorClose);
 
     }
 }

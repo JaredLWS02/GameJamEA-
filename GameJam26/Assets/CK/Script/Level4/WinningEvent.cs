@@ -16,7 +16,7 @@ public class WinningEvent : MonoBehaviour
     public bool eventTriggered = false;
 
     public Animator enemyAnimator;
-
+    public AudioSource audioSource;  // Assign the sound to play
     [Header("Player Animation")]
     public RuntimeAnimatorController playerKickController;
 
@@ -46,10 +46,12 @@ public class WinningEvent : MonoBehaviour
                 originalPlayerController = animator.runtimeAnimatorController;
         }
 
-        enemyAnimator.SetBool("isSparta", true);
-
+       
+        if (audioSource != null)
+            audioSource.Play();
+        StartCoroutine(ThisisSpartaAfterDelay(1.2f));
         //  Delay before swapping animator controller
-        StartCoroutine(ChangePlayerAnimatorAfterDelay(0.05f));
+        StartCoroutine(ChangePlayerAnimatorAfterDelay(1.25f));
 
         Debug.Log("Play THIS IS SPARTA animation");
     }
@@ -66,6 +68,12 @@ public class WinningEvent : MonoBehaviour
         {
             playerAnimator.runtimeAnimatorController = playerKickController;
         }
+    }
+
+    private IEnumerator ThisisSpartaAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        enemyAnimator.SetBool("isSparta", true);
     }
     // These functions are called by the child colliders
     public void PlayerEnter()
