@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da59881943fb1fd478ce0063d5870253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Level2Button
-  CorrectlevelName: Level Selection
+  CorrectlevelName: cat
   WronglevelName: Level2-5
   CorrentButton: 0
   UI: {fileID: 5481703531510691008}

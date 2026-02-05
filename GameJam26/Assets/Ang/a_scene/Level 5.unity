@@ -563,6 +563,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 610723319853475316, guid: e64358ee55c002b4da28d6e35d0c57c3, type: 3}
+      propertyPath: eventSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 5b51c2d984316034a9c27d19befc4216, type: 3}
+    - target: {fileID: 610723319853475316, guid: e64358ee55c002b4da28d6e35d0c57c3, type: 3}
+      propertyPath: gameSFX2
+      value: 
+      objectReference: {fileID: 8300000, guid: db18bdf943b54334b884b9cb4935801c, type: 3}
+    - target: {fileID: 610723319853475316, guid: e64358ee55c002b4da28d6e35d0c57c3, type: 3}
+      propertyPath: gameSFX3
+      value: 
+      objectReference: {fileID: 8300000, guid: fade4c072e900c54b8f3c3ef2ff3e806, type: 3}
+    - target: {fileID: 610723319853475316, guid: e64358ee55c002b4da28d6e35d0c57c3, type: 3}
+      propertyPath: gameSFX4
+      value: 
+      objectReference: {fileID: 8300000, guid: 4cd62d49f39f7f24c94a3191bfc0b162, type: 3}
+    - target: {fileID: 610723319853475316, guid: e64358ee55c002b4da28d6e35d0c57c3, type: 3}
+      propertyPath: gameSFX5
+      value: 
+      objectReference: {fileID: 8300000, guid: 01692ed027c42734dbcf292bc9d21745, type: 3}
+    - target: {fileID: 610723319853475316, guid: e64358ee55c002b4da28d6e35d0c57c3, type: 3}
+      propertyPath: gameSFX6
+      value: 
+      objectReference: {fileID: 8300000, guid: 2b7f8edc69098634e969058d40f98454, type: 3}
+    - target: {fileID: 610723319853475316, guid: e64358ee55c002b4da28d6e35d0c57c3, type: 3}
+      propertyPath: eventSFX2
+      value: 
+      objectReference: {fileID: 8300000, guid: 38663bf8fadef1441a0ae523b51998c2, type: 3}
+    - target: {fileID: 610723319853475316, guid: e64358ee55c002b4da28d6e35d0c57c3, type: 3}
+      propertyPath: eventSFX3
+      value: 
+      objectReference: {fileID: 8300000, guid: 47702979b7912da4995670ea3a2c845f, type: 3}
+    - target: {fileID: 610723319853475316, guid: e64358ee55c002b4da28d6e35d0c57c3, type: 3}
+      propertyPath: eventSFX4
+      value: 
+      objectReference: {fileID: 8300000, guid: e24c2a0ce6100ed42bde4c9fb324a6ef, type: 3}
+    - target: {fileID: 610723319853475316, guid: e64358ee55c002b4da28d6e35d0c57c3, type: 3}
+      propertyPath: vacuumSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 8de10145168db8e469a20f9db0ff91d3, type: 3}
     - target: {fileID: 2496296098909078166, guid: e64358ee55c002b4da28d6e35d0c57c3, type: 3}
       propertyPath: m_Name
       value: Audio Manager
