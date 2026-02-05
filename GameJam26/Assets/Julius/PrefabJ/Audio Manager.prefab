@@ -184,7 +184,7 @@ MonoBehaviour:
   mainmenuBGM: {fileID: 8300000, guid: 704358a7d0944034ab5d5c1806050350, type: 3}
   level1BGM: {fileID: 0}
   level2BGM: {fileID: 0}
-  level3BGM: {fileID: 8300000, guid: f3ebc314ba4a1874287b226e851307d0, type: 3}
+  level3BGM: {fileID: 0}
   level4BGM: {fileID: 0}
   level5BGM: {fileID: 8300000, guid: 49afb7061a93aa9408fcab94f164e813, type: 3}
   winBGM: {fileID: 0}
@@ -192,7 +192,7 @@ MonoBehaviour:
   extraBGM1: {fileID: 0}
   extraBGM2: {fileID: 0}
   extraBGM3: {fileID: 0}
-  jumpSFX: {fileID: 8300000, guid: a76bcda52c8b5ee47b78181bc9e1f808, type: 3}
+  jumpSFX: {fileID: 0}
   jumpSFX2: {fileID: 0}
   landSFX: {fileID: 0}
   landSFX2: {fileID: 0}
