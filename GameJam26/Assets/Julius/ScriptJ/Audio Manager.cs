@@ -55,39 +55,65 @@ public class AudioManager : MonoBehaviour
     public AudioClip eventSFX11;
     #endregion Declaration
 
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static AudioManager instance;
+    private void Awake()
     {
-        string activeSceneName = SceneManager.GetActiveScene().name;
-        if (activeSceneName == "Level Selection")
+        if (instance == null)
         {
-            Debug.Log("Got bgm clip");
-            musicSource.clip = mainmenuBGM;
+            instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-        else if (activeSceneName =="Level 1")
+        else
         {
-            musicSource.clip = level1BGM;
+            Destroy(gameObject);
         }
-        else if (activeSceneName == "Level 2")
+    }
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        ChangeBGM(scene.name);
+    }
+
+    void ChangeBGM(string sceneName)
+    {
+        AudioClip newClip = null;
+
+        switch (sceneName)
         {
-            musicSource.clip = level2BGM;
-        }
-        else if (activeSceneName == "Level 3")
-        {
-            musicSource.clip = level3BGM;
-        }
-        else if (activeSceneName == "Level 4")
-        {
-            musicSource.clip = level4BGM;
-        }
-        else if (activeSceneName == "Level 5")
-        {
-            musicSource.clip = level5BGM;
+            case "Level Selection":
+                newClip = mainmenuBGM;
+                break;
+            case "Level 1":
+                newClip = level1BGM;
+                break;
+            case "Level 2":
+                newClip = level2BGM;
+                break;
+            case "Level 3":
+                newClip = level3BGM;
+                break;
+            case "Level 4":
+                newClip = level4BGM;
+                break;
+            case "Level 5":
+                newClip = level5BGM;
+                break;
         }
 
-        //Debug.Log("try to play.current scene ="+activeSceneName);
-        musicSource.Play();
+        if (newClip != null && musicSource.clip != newClip)
+        {
+            musicSource.clip = newClip;
+            musicSource.Play();
+        }
     }
 
     public void PlayWinBGM()

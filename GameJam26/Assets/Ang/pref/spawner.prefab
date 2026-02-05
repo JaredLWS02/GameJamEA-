@@ -46,10 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   fallingPrefabs:
   - {fileID: 4723099466767873691, guid: 10a3aa3e98a94a1459af52e12c010a53, type: 3}
-  - {fileID: 8250353351619370948, guid: d6f5dfe0f00bb8d49bd82dda8c51d176, type: 3}
-  - {fileID: 6886880493630917906, guid: df88acb74b8d0144384adf25992bfc7f, type: 3}
-  - {fileID: 5554628581152974161, guid: 35b1f37af502b9644a9194dd6e101918, type: 3}
-  spawnInterval: 0.7
+  spawnInterval: 0.5
   spawnXRange: 10.08
   spawnY: -1.84
   gizmoColor: {r: 1, g: 0.06252845, b: 0, a: 1}

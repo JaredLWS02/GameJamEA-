@@ -83,8 +83,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.1566037, g: 0.17157622, b: 1, a: 1}
+  m_Sprite: {fileID: -189580767, guid: 4a713030c65aebf47bab31b23cbe08a8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -148,3 +148,4 @@ MonoBehaviour:
   dodgeClip: {fileID: 8300000, guid: 01692ed027c42734dbcf292bc9d21745, type: 3}
   hitClip: {fileID: 8300000, guid: 2b7f8edc69098634e969058d40f98454, type: 3}
   soundVolume: 0.5
+  losepanel: {fileID: 4284374998652644401, guid: b1884b8a423e5da41b30b55217db7bf6, type: 3}
