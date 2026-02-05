@@ -139,16 +139,33 @@ public class AudioManager : MonoBehaviour
         gameSFXSource.PlayOneShot(clip);
     }
 
-    public void PlayEventSFX(AudioClip clip)
-    {
-        eventSFXSource.PlayOneShot(clip);
-    }
-
     public void PauseBGM(AudioClip clipToPause)
     {
         if (musicSource.clip == clipToPause)
             musicSource.Pause();
     }
+
+    private bool isEventSFXPlaying;
+
+    public void PlayEventSFX(AudioClip clip)
+    {
+        if (clip == null) return;
+
+        isEventSFXPlaying = true;
+        eventSFXSource.PlayOneShot(clip);
+        Invoke(nameof(ResetEventSFXState), clip.length);
+    }
+
+    void ResetEventSFXState()
+    {
+        isEventSFXPlaying = false;
+    }
+
+    public bool IsEventSFXPlaying()
+    {
+        return isEventSFXPlaying;
+    }
+
 
 
 }

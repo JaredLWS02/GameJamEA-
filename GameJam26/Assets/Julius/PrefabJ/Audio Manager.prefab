@@ -183,9 +183,9 @@ MonoBehaviour:
   eventSFXSource: {fileID: 5388063600231776319}
   mainmenuBGM: {fileID: 8300000, guid: 704358a7d0944034ab5d5c1806050350, type: 3}
   level1BGM: {fileID: 0}
-  level2BGM: {fileID: 0}
-  level3BGM: {fileID: 0}
-  level4BGM: {fileID: 0}
+  level2BGM: {fileID: 8300000, guid: bdc63c244f88d034d899eb1156262103, type: 3}
+  level3BGM: {fileID: 8300000, guid: 6a55591b16be2be439894652de910dcc, type: 3}
+  level4BGM: {fileID: 8300000, guid: 1dc39bff829cd5943a7533dec74cf1a3, type: 3}
   level5BGM: {fileID: 8300000, guid: 49afb7061a93aa9408fcab94f164e813, type: 3}
   winBGM: {fileID: 0}
   loseBGM: {fileID: 0}
