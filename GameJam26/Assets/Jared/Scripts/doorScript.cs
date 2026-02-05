@@ -7,6 +7,8 @@ public class doorScript : MonoBehaviour
     [SerializeField] private SpriteRenderer sr2;
     [SerializeField] private string sceneName;
     [SerializeField] private bool trig;
+    [SerializeField] private AudioSource opn;
+    [SerializeField] private AudioSource cls;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,6 +32,7 @@ public class doorScript : MonoBehaviour
         if(col.CompareTag("Player"))
         {
             trig = true;
+            opn.Play();
             sr.enabled = false;
             sr2.enabled = true;
         }
@@ -40,6 +43,7 @@ public class doorScript : MonoBehaviour
         if(col.CompareTag("Player"))
         {
             trig = false;
+            cls.Play();
             sr2.enabled = false;
             sr.enabled = true;
         }

@@ -7,7 +7,6 @@ TagManager:
   - Obstacle
   - Ground
   - ball
-  - audioManager
   layers:
   - Default
   - TransparentFX

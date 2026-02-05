@@ -7,6 +7,7 @@ public class Level2_5Button : MonoBehaviour
     private bool playerInside = false;
     private bool isPressed = false;
     public GameObject UI;
+    public AudioSource ButtonSound;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -30,6 +31,7 @@ public class Level2_5Button : MonoBehaviour
         {
             isPressed = true;
             manager.ButtonPressed();
+            ButtonSound.Play();
             Debug.Log(gameObject.name + " pressed");
         }
     }

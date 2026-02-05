@@ -8,6 +8,14 @@ public class counter : MonoBehaviour
     private bool trig;
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private SpriteRenderer sr1;
+    [SerializeField] private SpriteRenderer hc1;
+    [SerializeField] private SpriteRenderer hc2;
+    [SerializeField] private SpriteRenderer h6;
+    [SerializeField] private SpriteRenderer h7;
+    [SerializeField] private AudioSource sng;
+    [SerializeField] private AudioSource kid;
+    [SerializeField] private AudioSource button;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,8 +28,23 @@ public class counter : MonoBehaviour
     {
         if (trig && Input.GetKeyDown(KeyCode.E))
         {
+            button.Play();
             StartCoroutine(pushed());
             if (lc.count != 6 && rc.count != 7)
+            {
+                lc.count = 0;
+                rc.count = 0;
+            }
+            else if(lc.count == 6 && rc.count == 7)
+            {
+                hc1.enabled = false;
+                hc2.enabled = false;
+                h6.enabled = true;
+                h7.enabled = true;
+                sng.enabled = true;
+                kid.enabled = true;
+            }
+            else
             {
                 lc.count = 0;
                 rc.count = 0;
