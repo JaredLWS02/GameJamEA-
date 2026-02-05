@@ -12,6 +12,7 @@ public class PauseMenu : MonoBehaviour
     private Animator animator;
     public MonoBehaviour playerMove;
     public bool spin = false;
+    [SerializeField] private AudioSource aud;
 
     void Start()
     {
@@ -60,13 +61,15 @@ public class PauseMenu : MonoBehaviour
     public void payRespect()
     {
         animator.enabled = true;
+        aud.enabled = true;
     }
         
     public void closePanel()
-        {
+    {
             panel.SetActive(false);
             playerMove.enabled = true;
-        }
+            aud.enabled = false;
+    }
 
     public void QuitGame()
     {
