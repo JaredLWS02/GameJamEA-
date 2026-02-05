@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource gameSFXSource;
     [SerializeField] AudioSource eventSFXSource;
     [Header("-------------------BGM Audio Clips ------------------")]
-    
+
     public AudioClip mainmenuBGM;
     public AudioClip level1BGM;
     public AudioClip level2BGM;
@@ -140,8 +140,15 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlayEventSFX(AudioClip clip)
-    {       
+    {
         eventSFXSource.PlayOneShot(clip);
     }
+
+    public void PauseBGM(AudioClip clipToPause)
+    {
+        if (musicSource.clip == clipToPause)
+            musicSource.Pause();
+    }
+
 
 }
