@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Simple, general-purpose object pool that supports multiple prefab types.
@@ -97,7 +98,21 @@ public class ObjectPooler : MonoBehaviour
         go.name = prefab.name + "_p";
         return go;
     }
+
+    public void restartgame()
+    {
+        SceneManager.LoadSceneAsync(2);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
+
+    public void home()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
 }
+
 
 /// <summary>
 /// Marker attached to pooled instances so pool knows their original prefab.
