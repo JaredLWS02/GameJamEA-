@@ -55,14 +55,25 @@ public class AudioManager : MonoBehaviour
     public AudioClip eventSFX11;
     #endregion Declaration
 
-    
+    public static AudioManager instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         string activeSceneName = SceneManager.GetActiveScene().name;
         if (activeSceneName == "Level Selection")
-        {
-            Debug.Log("Got bgm clip");
+        {     
             musicSource.clip = mainmenuBGM;
         }
         else if (activeSceneName =="Level 1")
@@ -86,7 +97,7 @@ public class AudioManager : MonoBehaviour
             musicSource.clip = level5BGM;
         }
 
-        //Debug.Log("try to play.current scene ="+activeSceneName);
+        
         musicSource.Play();
     }
 
