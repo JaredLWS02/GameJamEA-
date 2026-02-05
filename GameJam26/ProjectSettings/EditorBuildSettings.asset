@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Julius/ScenesJ/Level 3.unity
     guid: c78781d0f1ab8fb44b26556ab8b54db6
   - enabled: 1
-    path: Assets/Julius/ScenesJ/Level 5.unity
+    path: Assets/Ang/a_scene/Level 5.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Julius/ScenesJ/Level Selection.unity
