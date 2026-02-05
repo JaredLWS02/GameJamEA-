@@ -7,6 +7,8 @@ public class openLevel : MonoBehaviour
     public GameObject interactables;
     public MonoBehaviour playerMovement;
     private bool playerInTrigger = false;
+    [SerializeField] private AudioSource aud;
+    [SerializeField] private PauseMenu pan;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,6 +32,14 @@ public class openLevel : MonoBehaviour
                 bool isActive = Catpanel.activeSelf;
                 Catpanel.SetActive(!isActive);
                 interactables.SetActive(isActive); // Hide interactables if panel opens, show if closes
+                if (!isActive && pan.spin)
+                {
+                    aud.enabled = true;
+                }
+                if(isActive)
+                {
+                    aud.enabled = false;
+                }
                 if (!playerMovement.enabled)
                 {
                     playerMovement.enabled = true;
