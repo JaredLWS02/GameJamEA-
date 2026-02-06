@@ -12,13 +12,11 @@ public class ActivateButtonAfterMusic : MonoBehaviour
         nextButton.gameObject.SetActive(false);
     }
 
-    public void WaitForEvent(AudioClip clip)
+    public void WaitForEvent()
     {
-        if (clip == null)
-            return;
 
         StopAllCoroutines();
-        StartCoroutine(WaitThenShow(clip.length));
+        StartCoroutine(WaitThenShow(10f));
     }
 
     IEnumerator WaitThenShow(float duration)

@@ -83,7 +83,7 @@ public class AudioManager : MonoBehaviour
         ChangeBGM(scene.name);
     }
 
-    void ChangeBGM(string sceneName)
+    public void ChangeBGM(string sceneName)
     {
         AudioClip newClip = null;
 

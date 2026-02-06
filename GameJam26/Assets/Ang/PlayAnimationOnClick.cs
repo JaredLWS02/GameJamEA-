@@ -7,10 +7,12 @@ public class PlayAnimationOnClick : MonoBehaviour
     public Animator animator;
     public UnityEngine.UI.Button playButton;
     public ActivateButtonAfterMusic activateButtonAfterMusic;
+    private AudioManager audioManager;
 
     void Start()
     {
         targetObject.SetActive(false);
+        audioManager = GameObject.FindGameObjectWithTag("audioManager").GetComponent<AudioManager>();
     }
 
     public void PlayAnim()
@@ -26,12 +28,11 @@ public class PlayAnimationOnClick : MonoBehaviour
 
         if (AudioManager.instance.eventSFX3 != null)
         {
-            AudioManager.instance.PlayEventSFX(AudioManager.instance.eventSFX3);
-            AudioManager.instance.PauseBGM(AudioManager.instance.level5BGM);
+            audioManager.ChangeBGM("Level 2");
+            audioManager.PauseBGM(audioManager.level5BGM);
+           activateButtonAfterMusic.WaitForEvent();
 
-            activateButtonAfterMusic.WaitForEvent(
-                AudioManager.instance.eventSFX3
-            );
+            
         }
     }
 

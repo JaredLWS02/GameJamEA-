@@ -7,7 +7,7 @@ public class SceneFade : MonoBehaviour
 {
     public Image fadeImage;       // Assign the full-screen black UI Image
     public float fadeDuration = 1f;
-
+    private AudioManager audioManager;
     private void Awake()
     {
         Time.timeScale = 1f; // 🔥 force unpause on scene load
@@ -20,6 +20,7 @@ public class SceneFade : MonoBehaviour
     private void Start()
     {
         // Fade from black to transparent on scene load
+        audioManager = GameObject.FindGameObjectWithTag("audioManager").GetComponent<AudioManager>();
         StartCoroutine(FadeIn());
     }
 
@@ -93,17 +94,11 @@ public class SceneFade : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         int nextSceneIndex = currentScene.buildIndex + 1;
 
-        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
-        {
-            //SceneManager.LoadScene(nextSceneIndex);
-            Time.timeScale = 1f;
-            SceneManager.LoadScene(5);
-        }
-        else
-        {
-            // Optional: loop back to first scene
-            Time.timeScale = 1f;
-            SceneManager.LoadScene(5);
-        }
+
+        Time.timeScale = 1f;
+        audioManager.PauseBGM(audioManager.winBGM);
+        SceneManager.LoadScene("cat");
     }
+
+    
 }

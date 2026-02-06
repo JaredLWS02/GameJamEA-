@@ -26,7 +26,7 @@ public class DefeatUI : MonoBehaviour
     public void QuitGame()
     {
         Debug.Log("Quitting game...");
-        Application.Quit();
+        SceneManager.LoadScene("cat");
     }
 
 }
