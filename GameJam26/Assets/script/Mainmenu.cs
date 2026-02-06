@@ -5,7 +5,7 @@ public class Mainmenu : MonoBehaviour
 {
     public void playgame()
     {
-        SceneManager.LoadSceneAsync(2);
+        SceneManager.LoadSceneAsync("Cat");
     }
     public void setting()
     {

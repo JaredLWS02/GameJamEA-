@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
@@ -10,6 +10,7 @@ public class SceneFade : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1f; // 🔥 force unpause on scene load
         // Start fully black at first
         Color c = fadeImage.color;
         c.a = 1f;
@@ -24,6 +25,7 @@ public class SceneFade : MonoBehaviour
 
     public void NextScene()
     {
+        Time.timeScale = 1f; // 🔥 force unpause on scene load
         StartCoroutine(FadeOutAndLoadNext());
     }
 
@@ -93,12 +95,15 @@ public class SceneFade : MonoBehaviour
 
         if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
         {
-            SceneManager.LoadScene(nextSceneIndex);
+            //SceneManager.LoadScene(nextSceneIndex);
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(5);
         }
         else
         {
             // Optional: loop back to first scene
-            SceneManager.LoadScene(0);
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(5);
         }
     }
 }
