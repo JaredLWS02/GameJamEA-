@@ -183,34 +183,34 @@ MonoBehaviour:
   eventSFXSource: {fileID: 5388063600231776319}
   mainmenuBGM: {fileID: 8300000, guid: 704358a7d0944034ab5d5c1806050350, type: 3}
   level1BGM: {fileID: 0}
-  level2BGM: {fileID: 8300000, guid: bdc63c244f88d034d899eb1156262103, type: 3}
-  level3BGM: {fileID: 8300000, guid: 6a55591b16be2be439894652de910dcc, type: 3}
-  level4BGM: {fileID: 8300000, guid: 1dc39bff829cd5943a7533dec74cf1a3, type: 3}
+  level2BGM: {fileID: 0}
+  level3BGM: {fileID: 8300000, guid: f3ebc314ba4a1874287b226e851307d0, type: 3}
+  level4BGM: {fileID: 0}
   level5BGM: {fileID: 8300000, guid: 49afb7061a93aa9408fcab94f164e813, type: 3}
   winBGM: {fileID: 0}
   loseBGM: {fileID: 0}
   extraBGM1: {fileID: 0}
   extraBGM2: {fileID: 0}
   extraBGM3: {fileID: 0}
-  jumpSFX: {fileID: 0}
+  jumpSFX: {fileID: 8300000, guid: a76bcda52c8b5ee47b78181bc9e1f808, type: 3}
   jumpSFX2: {fileID: 0}
   landSFX: {fileID: 0}
   landSFX2: {fileID: 0}
   pickupSFX: {fileID: 0}
   deathSFX: {fileID: 0}
   deathSFX2: {fileID: 0}
-  vacuumSFX: {fileID: 8300000, guid: 8de10145168db8e469a20f9db0ff91d3, type: 3}
-  gameSFX2: {fileID: 8300000, guid: db18bdf943b54334b884b9cb4935801c, type: 3}
-  gameSFX3: {fileID: 8300000, guid: fade4c072e900c54b8f3c3ef2ff3e806, type: 3}
-  gameSFX4: {fileID: 8300000, guid: 4cd62d49f39f7f24c94a3191bfc0b162, type: 3}
-  gameSFX5: {fileID: 8300000, guid: 01692ed027c42734dbcf292bc9d21745, type: 3}
-  gameSFX6: {fileID: 8300000, guid: 2b7f8edc69098634e969058d40f98454, type: 3}
+  vacuumSFX: {fileID: 0}
+  gameSFX2: {fileID: 0}
+  gameSFX3: {fileID: 0}
+  gameSFX4: {fileID: 0}
+  gameSFX5: {fileID: 0}
+  gameSFX6: {fileID: 0}
   gameSFX7: {fileID: 0}
   gameSFX8: {fileID: 0}
-  eventSFX: {fileID: 8300000, guid: 5b51c2d984316034a9c27d19befc4216, type: 3}
-  eventSFX2: {fileID: 8300000, guid: 38663bf8fadef1441a0ae523b51998c2, type: 3}
-  eventSFX3: {fileID: 8300000, guid: 47702979b7912da4995670ea3a2c845f, type: 3}
-  eventSFX4: {fileID: 8300000, guid: e24c2a0ce6100ed42bde4c9fb324a6ef, type: 3}
+  eventSFX: {fileID: 0}
+  eventSFX2: {fileID: 0}
+  eventSFX3: {fileID: 0}
+  eventSFX4: {fileID: 0}
   eventSFX5: {fileID: 0}
   eventSFX6: {fileID: 0}
   eventSFX7: {fileID: 0}

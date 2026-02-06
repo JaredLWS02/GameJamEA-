@@ -22,6 +22,11 @@ public class SceneFade : MonoBehaviour
         StartCoroutine(FadeIn());
     }
 
+    public void NextScene()
+    {
+        StartCoroutine(FadeOutAndLoadNext());
+    }
+
     // Call this to restart the scene with fade
     public void RestartScene()
     {
@@ -63,5 +68,37 @@ public class SceneFade : MonoBehaviour
 
         // Reload scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    // New: Fade out then load next scene
+    private IEnumerator FadeOutAndLoadNext()
+    {
+        float timer = 0f;
+        Color c = fadeImage.color;
+
+        while (timer < fadeDuration)
+        {
+            timer += Time.deltaTime;
+            c.a = Mathf.Lerp(0f, 1f, timer / fadeDuration);
+            fadeImage.color = c;
+            yield return null;
+        }
+
+        c.a = 1f;
+        fadeImage.color = c;
+
+        // Load next scene by build index
+        Scene currentScene = SceneManager.GetActiveScene();
+        int nextSceneIndex = currentScene.buildIndex + 1;
+
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            // Optional: loop back to first scene
+            SceneManager.LoadScene(0);
+        }
     }
 }
