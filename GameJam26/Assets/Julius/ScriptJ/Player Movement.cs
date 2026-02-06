@@ -14,24 +14,42 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool isFacingRight = true;
+<<<<<<< Updated upstream
     private AudioManager audioManager;
     private BackgroundColor backgroundColor;
     public GameObject nextLevel;
    
+=======
+
+>>>>>>> Stashed changes
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+<<<<<<< Updated upstream
         audioManager = GameObject.FindGameObjectWithTag("audioManager").GetComponent<AudioManager>();
         backgroundColor = GameObject.FindAnyObjectByType<BackgroundColor>();
         nextLevel.gameObject.SetActive(false);
+=======
+>>>>>>> Stashed changes
     }
    void Update()
     {
         float moveInput = Input.GetAxisRaw("Horizontal");
           rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
+<<<<<<< Updated upstream
             Flip(moveInput);
+=======
+        Flip(moveInput);
+
+        RaycastHit2D hit = Physics2D.Raycast(
+            groundCheck.position,
+            Vector2.down,
+            groundCheckDistance,
+            jumpableLayer
+        );
+>>>>>>> Stashed changes
 
             RaycastHit2D hit = Physics2D.Raycast(
                 groundCheck.position,
@@ -40,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
                 jumpableLayer
             );
 
+<<<<<<< Updated upstream
             isGrounded = hit.collider != null;
 
             animator.SetFloat("Speed", Mathf.Abs(moveInput));
@@ -51,6 +70,15 @@ public class PlayerMovement : MonoBehaviour
                 audioManager.PlayPlayerSFX(audioManager.jumpSFX);
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
+=======
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
+        animator.SetBool("isGrounded", isGrounded);
+
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+>>>>>>> Stashed changes
         }
 
         void Flip(float moveInput)
@@ -98,6 +126,24 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+
+    void Flip(float moveInput)
+    {
+        if (moveInput > 0 && !isFacingRight)
+        {
+            isFacingRight = true;
+            Vector3 scale = transform.localScale;
+            scale.x = Mathf.Abs(scale.x);
+            transform.localScale = scale;
+        }
+        else if (moveInput < 0 && isFacingRight)
+        {
+            isFacingRight = false;
+            Vector3 scale = transform.localScale;
+            scale.x = -Mathf.Abs(scale.x);
+            transform.localScale = scale;
+        }
+    }
 
     void OnDrawGizmos()
         {
