@@ -29,7 +29,8 @@ public class ActivateButtonAfterMusic : MonoBehaviour
 
     public void home()
     {
-        SceneManager.LoadSceneAsync(4);
+        Time.timeScale = 1f;
+        SceneManager.LoadSceneAsync("Cat");
     }
 }
 

@@ -109,7 +109,8 @@ public class ObjectPooler : MonoBehaviour
 
     public void home()
     {
-        SceneManager.LoadSceneAsync(0);
+        Time.timeScale = 1f;
+        SceneManager.LoadSceneAsync("Cat");
     }
 }
 
