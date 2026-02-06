@@ -3,8 +3,21 @@
   "WorkspaceRootPath": "C:\\Users\\cchunyee\\GameJamEA-\\GameJam26\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|c:\\users\\cchunyee\\gamejamea-\\gamejam26\\assets\\julius\\scriptj\\player movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|solutionrelative:assets\\julius\\scriptj\\player movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\GitHub\\GameJamEA-\\GameJam26\\assets\\julius\\scriptj\\player movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|solutionrelative:assets\\julius\\scriptj\\player movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\GitHub\\GameJamEA-\\GameJam26\\assets\\julius\\scriptj\\audio manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|solutionrelative:assets\\julius\\scriptj\\audio manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\GitHub\\GameJamEA-\\GameJam26\\assets\\julius\\scriptj\\scenefade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|solutionrelative:assets\\julius\\scriptj\\scenefade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> parent of e3b1a04 (??)
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|C:\\Users\\cchunyee\\GameJamEA-\\GameJam26\\assets\\julius\\scriptj\\audio manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +36,13 @@
       "RelativeMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|solutionrelative:assets\\julius\\scriptj\\background color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|C:\\Users\\cchunyee\\GameJamEA-\\GameJam26\\assets\\julius\\scriptj\\scenefade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|solutionrelative:assets\\julius\\scriptj\\scenefade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\GitHub\\GameJamEA-\\GameJam26\\assets\\julius\\scriptj\\vacuum patrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3F284F-1126-E20C-886A-0B6C6A5F79B9}|Assembly-CSharp.csproj|solutionrelative:assets\\julius\\scriptj\\vacuum patrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> parent of e3b1a04 (??)
     }
   ],
   "DocumentGroupContainers": [
@@ -34,6 +52,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 4,
           "Children": [
             {
@@ -51,6 +70,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+=======
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+>>>>>>> parent of e3b1a04 (??)
               "Title": "SceneFade.cs",
               "DocumentMoniker": "C:\\Users\\cchunyee\\GameJamEA-\\GameJam26\\Assets\\Julius\\ScriptJ\\SceneFade.cs",
               "RelativeDocumentMoniker": "Assets\\Julius\\ScriptJ\\SceneFade.cs",
@@ -62,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Background Color.cs",
               "DocumentMoniker": "C:\\Users\\cchunyee\\GameJamEA-\\GameJam26\\Assets\\Julius\\ScriptJ\\Background Color.cs",
               "RelativeDocumentMoniker": "Assets\\Julius\\ScriptJ\\Background Color.cs",
@@ -74,13 +100,17 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 4,
+>>>>>>> parent of e3b1a04 (??)
               "Title": "Vacuum Patrol.cs",
               "DocumentMoniker": "C:\\Users\\cchunyee\\GameJamEA-\\GameJam26\\Assets\\Julius\\ScriptJ\\Vacuum Patrol.cs",
               "RelativeDocumentMoniker": "Assets\\Julius\\ScriptJ\\Vacuum Patrol.cs",
               "ToolTip": "C:\\Users\\cchunyee\\GameJamEA-\\GameJam26\\Assets\\Julius\\ScriptJ\\Vacuum Patrol.cs",
               "RelativeToolTip": "Assets\\Julius\\ScriptJ\\Vacuum Patrol.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAIwFIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwD8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T08:06:32.049Z"
             },
@@ -92,7 +122,11 @@
               "RelativeDocumentMoniker": "Assets\\Julius\\ScriptJ\\Player Movement.cs",
               "ToolTip": "C:\\Users\\cchunyee\\GameJamEA-\\GameJam26\\Assets\\Julius\\ScriptJ\\Player Movement.cs",
               "RelativeToolTip": "Assets\\Julius\\ScriptJ\\Player Movement.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAXAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBQAAAAFAAAAAAAAAA==",
+>>>>>>> parent of e3b1a04 (??)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T03:47:35.859Z",
               "EditorCaption": ""
@@ -105,7 +139,11 @@
               "RelativeDocumentMoniker": "Assets\\Julius\\ScriptJ\\Audio Manager.cs",
               "ToolTip": "C:\\Users\\cchunyee\\GameJamEA-\\GameJam26\\Assets\\Julius\\ScriptJ\\Audio Manager.cs",
               "RelativeToolTip": "Assets\\Julius\\ScriptJ\\Audio Manager.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAHYAAAAAAAAAAAAxwHYAAAAcAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAHgAAAAAAAAAAAAmwJsAAAABAAAAAAAAAA==",
+>>>>>>> parent of e3b1a04 (??)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T08:30:00.304Z"
             }
