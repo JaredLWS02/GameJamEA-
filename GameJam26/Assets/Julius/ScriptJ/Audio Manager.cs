@@ -166,6 +166,9 @@ public class AudioManager : MonoBehaviour
         return isEventSFXPlaying;
     }
 
-
+    public void PlayButtonSound()
+    {
+        gameSFXSource.PlayOneShot(vacuumSFX);
+    }
 
 }

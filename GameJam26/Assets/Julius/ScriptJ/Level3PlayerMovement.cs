@@ -1,6 +1,9 @@
 using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using TMPro;
 
-public class PlayerMovement : MonoBehaviour
+public class Level3PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 8f;
     public float jumpForce = 14f;
@@ -11,13 +14,17 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool isFacingRight = true;
-
+    private AudioManager audioManager;
+    private BackgroundColor backgroundColor;
+    public GameObject nextLevel;
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        audioManager = GameObject.FindGameObjectWithTag("audioManager").GetComponent<AudioManager>();
+        backgroundColor = GameObject.FindAnyObjectByType<BackgroundColor>();
+        nextLevel.gameObject.SetActive(false);
     }
-
     void Update()
     {
         float moveInput = Input.GetAxisRaw("Horizontal");
@@ -40,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            audioManager.PlayPlayerSFX(audioManager.jumpSFX);
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
     }
@@ -61,6 +69,34 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = scale;
         }
     }
+
+
+
+    public void OIIA()
+    {
+        StartCoroutine(ScaleOverTime(new Vector3(30f, 30f, 30f), 1f));
+    }
+    IEnumerator ScaleOverTime(Vector3 targetScale, float duration)
+    {
+        Vector3 startScale = transform.localScale;
+        float time = 0f;
+
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+            float t = time / duration;
+            transform.localScale = Vector3.Lerp(startScale, targetScale, t);
+            yield return null;
+        }
+
+        transform.localScale = targetScale; // ensure exact final size
+        animator.SetTrigger("OIIA");
+        backgroundColor.StartRainbow();
+        nextLevel.gameObject.SetActive(true);
+        enabled = false;
+    }
+
+
 
     void OnDrawGizmos()
     {

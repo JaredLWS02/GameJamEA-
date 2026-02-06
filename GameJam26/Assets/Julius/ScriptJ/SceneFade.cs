@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
@@ -10,6 +10,7 @@ public class SceneFade : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1f; // 🔥 force unpause on scene load
         // Start fully black at first
         Color c = fadeImage.color;
         c.a = 1f;
@@ -20,6 +21,12 @@ public class SceneFade : MonoBehaviour
     {
         // Fade from black to transparent on scene load
         StartCoroutine(FadeIn());
+    }
+
+    public void NextScene()
+    {
+        Time.timeScale = 1f; // 🔥 force unpause on scene load
+        StartCoroutine(FadeOutAndLoadNext());
     }
 
     // Call this to restart the scene with fade
@@ -63,5 +70,40 @@ public class SceneFade : MonoBehaviour
 
         // Reload scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    // New: Fade out then load next scene
+    private IEnumerator FadeOutAndLoadNext()
+    {
+        float timer = 0f;
+        Color c = fadeImage.color;
+
+        while (timer < fadeDuration)
+        {
+            timer += Time.deltaTime;
+            c.a = Mathf.Lerp(0f, 1f, timer / fadeDuration);
+            fadeImage.color = c;
+            yield return null;
+        }
+
+        c.a = 1f;
+        fadeImage.color = c;
+
+        // Load next scene by build index
+        Scene currentScene = SceneManager.GetActiveScene();
+        int nextSceneIndex = currentScene.buildIndex + 1;
+
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            //SceneManager.LoadScene(nextSceneIndex);
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(5);
+        }
+        else
+        {
+            // Optional: loop back to first scene
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(5);
+        }
     }
 }
