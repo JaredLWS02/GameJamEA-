@@ -9,6 +9,7 @@ public class SwordTrollSound : MonoBehaviour
     public GameObject InteractUI;
     private bool canClick = true;
     private bool playerInside = false;
+    public AudioSource playerAudio;
 
     void Update()
     {
@@ -23,15 +24,17 @@ public class SwordTrollSound : MonoBehaviour
     {
         if (audioSource != null)
             audioSource.Play();
-
+        playerAudio.Stop();
         canClick = false;                // Disable further clicks
         StartCoroutine(CooldownCoroutine());
     }
 
     private IEnumerator CooldownCoroutine()
     {
+      
         yield return new WaitForSeconds(cooldown);
-        canClick = true;                 // Re-enable after cooldown
+        canClick = true;
+        playerAudio.Play();// Re-enable after cooldown
     }
 
     // Detect when player enters collision
