@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 610723319853475316}
   m_Layer: 0
   m_Name: Audio Manager
-  m_TagString: Untagged
+  m_TagString: audioManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184,10 +184,10 @@ MonoBehaviour:
   mainmenuBGM: {fileID: 8300000, guid: 704358a7d0944034ab5d5c1806050350, type: 3}
   level1BGM: {fileID: 0}
   level2BGM: {fileID: 0}
-  level3BGM: {fileID: 8300000, guid: f3ebc314ba4a1874287b226e851307d0, type: 3}
+  level3BGM: {fileID: 8300000, guid: 09561d484a1bf2e44b4c190b89c44ffd, type: 3}
   level4BGM: {fileID: 0}
   level5BGM: {fileID: 8300000, guid: 49afb7061a93aa9408fcab94f164e813, type: 3}
-  winBGM: {fileID: 0}
+  winBGM: {fileID: 8300000, guid: 3065ace3ebe425643bf4cf155801ac25, type: 3}
   loseBGM: {fileID: 0}
   extraBGM1: {fileID: 0}
   extraBGM2: {fileID: 0}
@@ -199,7 +199,7 @@ MonoBehaviour:
   pickupSFX: {fileID: 0}
   deathSFX: {fileID: 0}
   deathSFX2: {fileID: 0}
-  vacuumSFX: {fileID: 0}
+  vacuumSFX: {fileID: 8300000, guid: 2b557b530dfdccc4d9dd5a3883e0b976, type: 3}
   gameSFX2: {fileID: 0}
   gameSFX3: {fileID: 0}
   gameSFX4: {fileID: 0}
