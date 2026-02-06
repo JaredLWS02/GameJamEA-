@@ -209,7 +209,7 @@ MonoBehaviour:
   gameSFX8: {fileID: 0}
   eventSFX: {fileID: 0}
   eventSFX2: {fileID: 0}
-  eventSFX3: {fileID: 0}
+  eventSFX3: {fileID: 8300000, guid: 47702979b7912da4995670ea3a2c845f, type: 3}
   eventSFX4: {fileID: 0}
   eventSFX5: {fileID: 0}
   eventSFX6: {fileID: 0}
